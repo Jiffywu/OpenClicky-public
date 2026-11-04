@@ -1,0 +1,912 @@
+{
+  "version": 1,
+  "models": [
+    {
+      "id": "gpt-6.1-sol",
+      "displayName": "GPT-6.1 Sol",
+      "kind": "language-model",
+      "capabilities": [
+        "text-input",
+        "image-input",
+        "text-output",
+        "streaming",
+        "tool-calling",
+        "reasoning"
+      ],
+      "dialects": [
+        "openai-responses",
+        "openai-chat"
+      ],
+      "reasoningEfforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max",
+        "ultra"
+      ],
+      "notes": "HeyClicky's default brain (medium effort).",
+      "price": {
+        "inputPerMillion": 2.0,
+        "cachedInputPerMillion": 0.1,
+        "outputPerMillion": 10.0,
+        "tiers": [
+          {
+            "minPromptTokens": 272000,
+            "inputPerMillion": 4.0,
+            "cachedInputPerMillion": 0.2,
+            "outputPerMillion": 15.0
+          }
+        ],
+        "source": "OpenRouter's public price list (openrouter.ai/api/v1/models), 2026-10-31"
+      }
+    },
+    {
+      "id": "gpt-6-sol",
+      "displayName": "GPT-6 Sol",
+      "kind": "language-model",
+      "capabilities": [
+        "text-input",
+        "image-input",
+        "text-output",
+        "streaming",
+        "tool-calling",
+        "reasoning"
+      ],
+      "dialects": [
+        "openai-responses",
+        "openai-chat"
+      ],
+      "reasoningEfforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max",
+        "ultra"
+      ],
+      "price": {
+        "inputPerMillion": 2.0,
+        "cachedInputPerMillion": 0.2,
+        "outputPerMillion": 10.0,
+        "tiers": [
+          {
+            "minPromptTokens": 272000,
+            "inputPerMillion": 4.0,
+            "cachedInputPerMillion": 0.4,
+            "outputPerMillion": 15.0
+          }
+        ],
+        "source": "OpenRouter's public price list (openrouter.ai/api/v1/models), 2026-10-31"
+      }
+    },
+    {
+      "id": "gpt-6-luna",
+      "displayName": "GPT-6 Luna",
+      "kind": "language-model",
+      "capabilities": [
+        "text-input",
+        "image-input",
+        "text-output",
+        "streaming",
+        "tool-calling",
+        "reasoning"
+      ],
+      "dialects": [
+        "openai-responses",
+        "openai-chat"
+      ],
+      "reasoningEfforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "notes": "HeyClicky's default background-agent model (high effort).",
+      "price": {
+        "inputPerMillion": 0.1,
+        "cachedInputPerMillion": 0.01,
+        "outputPerMillion": 0.5,
+        "tiers": [
+          {
+            "minPromptTokens": 272000,
+            "inputPerMillion": 0.2,
+            "cachedInputPerMillion": 0.02,
+            "outputPerMillion": 0.75
+          }
+        ],
+        "source": "OpenRouter's public price list (openrouter.ai/api/v1/models), 2026-10-31"
+      }
+    },
+    {
+      "id": "gpt-6-astra",
+      "displayName": "GPT-6 Astra",
+      "kind": "language-model",
+      "capabilities": [
+        "text-input",
+        "image-input",
+        "text-output",
+        "streaming",
+        "tool-calling",
+        "reasoning"
+      ],
+      "dialects": [
+        "openai-responses",
+        "openai-chat"
+      ],
+      "reasoningEfforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max",
+        "ultra"
+      ],
+      "price": {
+        "inputPerMillion": 10.0,
+        "cachedInputPerMillion": 1.0,
+        "outputPerMillion": 50.0,
+        "tiers": [
+          {
+            "minPromptTokens": 272000,
+            "inputPerMillion": 20.0,
+            "cachedInputPerMillion": 2.0,
+            "outputPerMillion": 75.0
+          }
+        ],
+        "source": "OpenRouter's public price list (openrouter.ai/api/v1/models), 2026-10-31"
+      }
+    },
+    {
+      "id": "gpt-5.6-sol",
+      "displayName": "GPT-5.6 Sol",
+      "kind": "language-model",
+      "capabilities": [
+        "text-input",
+        "image-input",
+        "text-output",
+        "streaming",
+        "tool-calling",
+        "reasoning"
+      ],
+      "dialects": [
+        "openai-responses",
+        "openai-chat"
+      ],
+      "reasoningEfforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max",
+        "ultra"
+      ],
+      "price": {
+        "inputPerMillion": 4.0,
+        "cachedInputPerMillion": 0.4,
+        "outputPerMillion": 20.0,
+        "source": "OpenRouter's public price list (openrouter.ai/api/v1/models), 2026-10-31"
+      }
+    },
+    {
+      "id": "gpt-5.6-terra",
+      "displayName": "GPT-5.6 Terra",
+      "kind": "language-model",
+      "capabilities": [
+        "text-input",
+        "image-input",
+        "text-output",
+        "streaming",
+        "tool-calling",
+        "reasoning"
+      ],
+      "dialects": [
+        "openai-responses",
+        "openai-chat"
+      ],
+      "reasoningEfforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max",
+        "ultra"
+      ],
+      "price": {
+        "inputPerMillion": 2.0,
+        "cachedInputPerMillion": 0.2,
+        "outputPerMillion": 12.0,
+        "source": "OpenRouter's public price list (openrouter.ai/api/v1/models), 2026-10-31"
+      }
+    },
+    {
+      "id": "gpt-5.6-luna",
+      "displayName": "GPT-5.6 Luna",
+      "kind": "language-model",
+      "capabilities": [
+        "text-input",
+        "image-input",
+        "text-output",
+        "streaming",
+        "tool-calling",
+        "reasoning"
+      ],
+      "dialects": [
+        "openai-responses",
+        "openai-chat"
+      ],
+      "reasoningEfforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "price": {
+        "inputPerMillion": 0.2,
+        "cachedInputPerMillion": 0.02,
+        "outputPerMillion": 1.2,
+        "source": "OpenRouter's public price list (openrouter.ai/api/v1/models), 2026-10-31"
+      }
+    },
+    {
+      "id": "gpt-5.5",
+      "displayName": "GPT-5.5",
+      "kind": "language-model",
+      "capabilities": [
+        "text-input",
+        "image-input",
+        "text-output",
+        "streaming",
+        "tool-calling",
+        "reasoning"
+      ],
+      "dialects": [
+        "openai-responses",
+        "openai-chat"
+      ],
+      "reasoningEfforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ],
+      "price": {
+        "inputPerMillion": 5.0,
+        "cachedInputPerMillion": 0.5,
+        "outputPerMillion": 30.0,
+        "source": "OpenRouter's public price list (openrouter.ai/api/v1/models), 2026-10-31"
+      }
+    },
+    {
+      "id": "gpt-5.4-mini",
+      "displayName": "GPT-5.4 Mini",
+      "kind": "language-model",
+      "capabilities": [
+        "text-input",
+        "image-input",
+        "text-output",
+        "streaming",
+        "tool-calling",
+        "reasoning"
+      ],
+      "dialects": [
+        "openai-responses",
+        "openai-chat"
+      ],
+      "reasoningEfforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ],
+      "notes": "Small and fast; a good brain-fast choice.",
+      "price": {
+        "inputPerMillion": 0.75,
+        "cachedInputPerMillion": 0.075,
+        "outputPerMillion": 4.5,
+        "source": "OpenRouter's public price list (openrouter.ai/api/v1/models), 2026-10-31"
+      }
+    },
+    {
+      "id": "claude-opus-5-5",
+      "displayName": "Claude Opus 5.5",
+      "kind": "language-model",
+      "capabilities": [
+        "text-input",
+        "image-input",
+        "text-output",
+        "streaming",
+        "tool-calling",
+        "reasoning"
+      ],
+      "dialects": [
+        "anthropic-messages"
+      ],
+      "reasoningEfforts": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "price": {
+        "inputPerMillion": 4.0,
+        "cachedInputPerMillion": 0.2,
+        "outputPerMillion": 20.0,
+        "source": "Anthropic API list price (platform.claude.com pricing), 2026-11-03; cache writes are the 5-minute rate",
+        "cacheWritePerMillion": 5.0
+      }
+    },
+    {
+      "id": "claude-sonnet-5-5",
+      "displayName": "Claude Sonnet 5.5",
+      "kind": "language-model",
+      "capabilities": [
+        "text-input",
+        "image-input",
+        "text-output",
+        "streaming",
+        "tool-calling",
+        "reasoning"
+      ],
+      "dialects": [
+        "anthropic-messages"
+      ],
+      "reasoningEfforts": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "price": {
+        "inputPerMillion": 2.0,
+        "cachedInputPerMillion": 0.1,
+        "outputPerMillion": 10.0,
+        "source": "Anthropic API list price (platform.claude.com pricing), 2026-11-03; cache writes are the 5-minute rate",
+        "cacheWritePerMillion": 2.5
+      }
+    },
+    {
+      "id": "claude-haiku-5-5",
+      "displayName": "Claude Haiku 5.5",
+      "kind": "language-model",
+      "capabilities": [
+        "text-input",
+        "image-input",
+        "text-output",
+        "streaming",
+        "tool-calling",
+        "reasoning"
+      ],
+      "dialects": [
+        "anthropic-messages"
+      ],
+      "reasoningEfforts": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "price": {
+        "inputPerMillion": 0.1,
+        "cachedInputPerMillion": 0.01,
+        "outputPerMillion": 0.5,
+        "tiers": [
+          {
+            "minPromptTokens": 100000,
+            "inputPerMillion": 0.5,
+            "cachedInputPerMillion": 0.05,
+            "outputPerMillion": 2.5,
+            "cacheWritePerMillion": 0.625
+          }
+        ],
+        "source": "Anthropic API list price (platform.claude.com pricing), 2026-11-03; cache writes are the 5-minute rate",
+        "cacheWritePerMillion": 0.125
+      }
+    },
+    {
+      "id": "gpt-realtime-2.1",
+      "displayName": "GPT Realtime 2.1",
+      "kind": "realtime-speech",
+      "capabilities": [
+        "text-input",
+        "image-input",
+        "audio-input",
+        "text-output",
+        "audio-output",
+        "streaming",
+        "tool-calling"
+      ],
+      "dialects": [
+        "openai-realtime"
+      ],
+      "voices": [
+        "alloy",
+        "ash",
+        "ballad",
+        "cedar",
+        "coral",
+        "echo",
+        "marin",
+        "sage",
+        "shimmer",
+        "verse"
+      ],
+      "notes": "HeyClicky's full voice (always-on, the onboarding interview) runs on it and shows it screenshots as input_image items.",
+      "price": {
+        "inputPerMillion": 4.0,
+        "cachedInputPerMillion": 0.4,
+        "outputPerMillion": 24.0,
+        "audioInputPerMillion": 32.0,
+        "audioOutputPerMillion": 64.0,
+        "source": "OpenAI API pricing page (developers.openai.com/api/docs/pricing), 2026-11-03"
+      }
+    },
+    {
+      "id": "gpt-realtime-2.1-mini",
+      "displayName": "GPT Realtime 2.1 Mini",
+      "kind": "realtime-speech",
+      "capabilities": [
+        "text-input",
+        "audio-input",
+        "text-output",
+        "audio-output",
+        "streaming",
+        "tool-calling"
+      ],
+      "dialects": [
+        "openai-realtime"
+      ],
+      "voices": [
+        "alloy",
+        "ash",
+        "ballad",
+        "cedar",
+        "coral",
+        "echo",
+        "marin",
+        "sage",
+        "shimmer",
+        "verse"
+      ],
+      "notes": "HeyClicky speaks through gpt-realtime-2.1-mini with reasoning effort minimal.",
+      "price": {
+        "inputPerMillion": 0.6,
+        "cachedInputPerMillion": 0.06,
+        "outputPerMillion": 2.4,
+        "audioInputPerMillion": 10.0,
+        "audioOutputPerMillion": 20.0,
+        "source": "OpenAI API pricing page (developers.openai.com/api/docs/pricing), 2026-11-03"
+      }
+    },
+    {
+      "id": "gpt-4o-mini-tts",
+      "displayName": "GPT-4o mini TTS",
+      "kind": "text-to-speech",
+      "capabilities": [
+        "text-input",
+        "audio-output",
+        "streaming"
+      ],
+      "dialects": [
+        "openai-speech"
+      ],
+      "voices": [
+        "alloy",
+        "ash",
+        "ballad",
+        "cedar",
+        "coral",
+        "echo",
+        "fable",
+        "marin",
+        "nova",
+        "onyx",
+        "sage",
+        "shimmer",
+        "verse"
+      ],
+      "notes": "OpenAI shuts gpt-4o-mini-tts (and tts-1, tts-1-hd) down on 2027-01-06.",
+      "price": {
+        "perThousandCharacters": 0.00015,
+        "perMinuteSpoken": 0.015,
+        "estimate": true,
+        "source": "estimate: OpenAI lists $0.60 per million text tokens in and $12 per million audio tokens out (developers.openai.com/api/docs/pricing, 2026-11-03); converted at about 4 characters a token and OpenAI's earlier $0.015 per minute of speech"
+      }
+    },
+    {
+      "id": "eleven_flash_v2_5",
+      "displayName": "ElevenLabs Flash v2.5",
+      "kind": "text-to-speech",
+      "capabilities": [
+        "text-input",
+        "audio-output",
+        "streaming"
+      ],
+      "dialects": [
+        "elevenlabs-speech"
+      ],
+      "notes": "Voices are account-specific voice ids.",
+      "price": {
+        "perThousandCharacters": 0.05,
+        "source": "estimate from ElevenLabs' published API rate for Flash models; ElevenLabs bills in plan credits",
+        "estimate": true
+      }
+    },
+    {
+      "id": "eleven_multilingual_v2",
+      "displayName": "ElevenLabs Multilingual v2",
+      "kind": "text-to-speech",
+      "capabilities": [
+        "text-input",
+        "audio-output",
+        "streaming"
+      ],
+      "dialects": [
+        "elevenlabs-speech"
+      ],
+      "notes": "Voices are account-specific voice ids.",
+      "price": {
+        "perThousandCharacters": 0.1,
+        "source": "estimate from ElevenLabs' published API rate for Multilingual models; ElevenLabs bills in plan credits",
+        "estimate": true
+      }
+    },
+    {
+      "id": "system",
+      "displayName": "macOS system voice",
+      "kind": "text-to-speech",
+      "capabilities": [
+        "text-input",
+        "audio-output",
+        "streaming",
+        "on-device"
+      ],
+      "dialects": [
+        "apple-speech-synthesis"
+      ],
+      "price": {
+        "perThousandCharacters": 0,
+        "source": "runs on this Mac"
+      }
+    },
+    {
+      "id": "nova-3",
+      "displayName": "Deepgram Nova-3",
+      "kind": "speech-to-text",
+      "capabilities": [
+        "audio-input",
+        "text-output",
+        "streaming",
+        "interim-results"
+      ],
+      "dialects": [
+        "deepgram-listen"
+      ],
+      "notes": "HeyClicky's dictation model.",
+      "price": {
+        "perMinute": 0.0077,
+        "source": "Deepgram pricing page (deepgram.com/pricing), Nova-3 monolingual, pay as you go, 2026-11-03"
+      }
+    },
+    {
+      "id": "gpt-4o-mini-transcribe",
+      "displayName": "GPT-4o mini Transcribe",
+      "kind": "speech-to-text",
+      "capabilities": [
+        "audio-input",
+        "text-output"
+      ],
+      "dialects": [
+        "openai-transcription"
+      ],
+      "notes": "HeyClicky uses it for input transcription inside the realtime session. OpenAI shuts it down on 2027-02-26; gpt-transcribe replaces it.",
+      "price": {
+        "perMinute": 0.003,
+        "estimate": true,
+        "source": "OpenAI's estimated cost per minute (developers.openai.com/api/docs/pricing, 2026-11-03); billed by tokens"
+      }
+    },
+    {
+      "id": "gpt-transcribe",
+      "displayName": "GPT Transcribe",
+      "kind": "speech-to-text",
+      "capabilities": [
+        "audio-input",
+        "text-output",
+        "streaming"
+      ],
+      "dialects": [
+        "openai-transcription"
+      ],
+      "notes": "OpenAI's recommended transcription model. Audio is uploaded when the user lets go of the talk keys; the transcript then streams in as it is transcribed.",
+      "price": {
+        "perMinute": 0.0045,
+        "estimate": true,
+        "source": "OpenAI's estimated cost per minute (developers.openai.com/api/docs/pricing, 2026-11-03)"
+      }
+    },
+    {
+      "id": "on-device",
+      "displayName": "Apple Speech (on device when available)",
+      "kind": "speech-to-text",
+      "capabilities": [
+        "audio-input",
+        "text-output",
+        "streaming",
+        "interim-results",
+        "on-device"
+      ],
+      "dialects": [
+        "apple-speech"
+      ],
+      "notes": "Prefers on-device recognition; for a language without an on-device model, Apple's servers do the recognition. HeyClicky's dictation fallback.",
+      "price": {
+        "perMinute": 0,
+        "source": "runs on this Mac"
+      }
+    },
+    {
+      "id": "gemini-3.8-flash-lite-tts",
+      "displayName": "Gemini 3.8 Flash-Lite TTS",
+      "kind": "text-to-speech",
+      "capabilities": [
+        "text-input",
+        "audio-output",
+        "streaming"
+      ],
+      "dialects": [
+        "gemini-speech"
+      ],
+      "voices": [
+        "Zephyr",
+        "Puck",
+        "Charon",
+        "Kore",
+        "Fenrir",
+        "Leda",
+        "Orus",
+        "Aoede",
+        "Callirrhoe",
+        "Autonoe",
+        "Enceladus",
+        "Iapetus",
+        "Umbriel",
+        "Algieba",
+        "Despina",
+        "Erinome",
+        "Algenib",
+        "Rasalgethi",
+        "Laomedeia",
+        "Achernar",
+        "Alnilam",
+        "Schedar",
+        "Gacrux",
+        "Pulcherrima",
+        "Achird",
+        "Zubenelgenubi",
+        "Vindemiatrix",
+        "Sadachbia",
+        "Sadaltager",
+        "Sulafat"
+      ],
+      "notes": "HeyClicky's Gemini voice model. For a Voice design id (voice_...), declare the model in your config without a voice list.",
+      "price": {
+        "perThousandCharacters": 0.000125,
+        "perMinuteSpoken": 0.009,
+        "estimate": true,
+        "source": "estimate from the Gemini API pricing page (ai.google.dev/gemini-api/docs/pricing, paid tier, 2026-11-03): $0.50 per million text tokens in (about 4 characters a token) and $0.0015 per 10 s of audio out, through 2026-12-31 (doubles from 2027-01-01)"
+      }
+    },
+    {
+      "id": "gemini-3.8-flash-tts",
+      "displayName": "Gemini 3.8 Flash TTS",
+      "kind": "text-to-speech",
+      "capabilities": [
+        "text-input",
+        "audio-output",
+        "streaming"
+      ],
+      "dialects": [
+        "gemini-speech"
+      ],
+      "voices": [
+        "Zephyr",
+        "Puck",
+        "Charon",
+        "Kore",
+        "Fenrir",
+        "Leda",
+        "Orus",
+        "Aoede",
+        "Callirrhoe",
+        "Autonoe",
+        "Enceladus",
+        "Iapetus",
+        "Umbriel",
+        "Algieba",
+        "Despina",
+        "Erinome",
+        "Algenib",
+        "Rasalgethi",
+        "Laomedeia",
+        "Achernar",
+        "Alnilam",
+        "Schedar",
+        "Gacrux",
+        "Pulcherrima",
+        "Achird",
+        "Zubenelgenubi",
+        "Vindemiatrix",
+        "Sadachbia",
+        "Sadaltager",
+        "Sulafat"
+      ],
+      "notes": "Higher fidelity, slower than Flash-Lite. For a Voice design id (voice_...), declare the model in your config without a voice list.",
+      "price": {
+        "perThousandCharacters": 0.000125,
+        "perMinuteSpoken": 0.0135,
+        "estimate": true,
+        "source": "estimate from the Gemini API pricing page (ai.google.dev/gemini-api/docs/pricing, paid tier, 2026-11-03): $0.50 per million text tokens in (about 4 characters a token) and $0.00225 per 10 s of audio out, through 2026-12-31 (doubles from 2027-01-01)"
+      }
+    },
+    {
+      "id": "gemini-3.5-transcribe-live",
+      "displayName": "Gemini 3.5 Transcribe Live",
+      "kind": "speech-to-text",
+      "capabilities": [
+        "audio-input",
+        "text-output",
+        "streaming",
+        "interim-results"
+      ],
+      "dialects": [
+        "gemini-live"
+      ],
+      "notes": "Gemini Live transcription, the kind of streaming STT HeyClicky's ears use. Sessions last up to 10 minutes.",
+      "price": {
+        "perMinute": 0.009,
+        "estimate": true,
+        "source": "Google's blended estimate of about $0.009 per minute ($0.005 a minute of audio in plus about $0.004 of text out) on the Gemini API pricing page, paid tier, 2026-11-03"
+      }
+    },
+    {
+      "id": "gemini-3.8-live",
+      "displayName": "Gemini 3.8 Live",
+      "kind": "realtime-speech",
+      "capabilities": [
+        "text-input",
+        "image-input",
+        "audio-input",
+        "text-output",
+        "audio-output",
+        "streaming",
+        "tool-calling"
+      ],
+      "dialects": [
+        "gemini-live"
+      ],
+      "voices": [
+        "Zephyr",
+        "Puck",
+        "Charon",
+        "Kore",
+        "Fenrir",
+        "Leda",
+        "Orus",
+        "Aoede",
+        "Callirrhoe",
+        "Autonoe",
+        "Enceladus",
+        "Iapetus",
+        "Umbriel",
+        "Algieba",
+        "Despina",
+        "Erinome",
+        "Algenib",
+        "Rasalgethi",
+        "Laomedeia",
+        "Achernar",
+        "Alnilam",
+        "Schedar",
+        "Gacrux",
+        "Pulcherrima",
+        "Achird",
+        "Zubenelgenubi",
+        "Vindemiatrix",
+        "Sadachbia",
+        "Sadaltager",
+        "Sulafat"
+      ],
+      "notes": "Gemini Live native-audio model for always-on voice: server voice activity detection, input and output transcription, function calling (non-blocking by default) and screenshots (OpenClicky attaches them to the capture_screen tool response, the only route it found the model reads them from). 16 kHz audio in, 24 kHz out. Audio-only sessions last about 15 minutes (2 with pictures) unless context compression is on, which OpenClicky turns on.",
+      "price": {
+        "inputPerMillion": 0.75,
+        "outputPerMillion": 4.5,
+        "audioInputPerMillion": 3.0,
+        "audioOutputPerMillion": 12.0,
+        "source": "Gemini API pricing page (ai.google.dev/gemini-api/docs/pricing), paid tier, 2026-11-03"
+      }
+    },
+    {
+      "id": "gemini-3.8-live-extended-thinking",
+      "displayName": "Gemini 3.8 Live (extended thinking)",
+      "kind": "realtime-speech",
+      "capabilities": [
+        "text-input",
+        "image-input",
+        "audio-input",
+        "text-output",
+        "audio-output",
+        "streaming",
+        "tool-calling",
+        "reasoning"
+      ],
+      "dialects": [
+        "gemini-live"
+      ],
+      "voices": [
+        "Zephyr",
+        "Puck",
+        "Charon",
+        "Kore",
+        "Fenrir",
+        "Leda",
+        "Orus",
+        "Aoede",
+        "Callirrhoe",
+        "Autonoe",
+        "Enceladus",
+        "Iapetus",
+        "Umbriel",
+        "Algieba",
+        "Despina",
+        "Erinome",
+        "Algenib",
+        "Rasalgethi",
+        "Laomedeia",
+        "Achernar",
+        "Alnilam",
+        "Schedar",
+        "Gacrux",
+        "Pulcherrima",
+        "Achird",
+        "Zubenelgenubi",
+        "Vindemiatrix",
+        "Sadachbia",
+        "Sadaltager",
+        "Sulafat"
+      ],
+      "reasoningEfforts": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "notes": "Gemini Live native-audio model that reasons longer in the background. Function calls are non-blocking only.",
+      "price": {
+        "inputPerMillion": 0.75,
+        "outputPerMillion": 4.5,
+        "audioInputPerMillion": 3.0,
+        "audioOutputPerMillion": 12.0,
+        "source": "Gemini API pricing page (ai.google.dev/gemini-api/docs/pricing), paid tier, 2026-11-03"
+      }
+    }
+  ],
+  "servicePrices": {
+    "brave": {
+      "perRequest": 0.005,
+      "source": "estimate: Brave Search API list price of $5 per 1,000 requests; your plan may differ",
+      "estimate": true
+    },
+    "exa": {
+      "perRequest": 0.005,
+      "source": "estimate: Exa search list price of about $5 per 1,000 searches; your plan may differ",
+      "estimate": true
+    },
+    "wikimedia-commons": {
+      "perRequest": 0,
+      "source": "free public API"
+    },
+    "mapkit": {
+      "perRequest": 0,
+      "source": "MapKit on this Mac"
+    }
+  }
+}

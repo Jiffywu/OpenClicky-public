@@ -1,0 +1,20 @@
+```js
+// A dark screen (readable ink turns light) and live edits by part id: erase by name, move, highlight, undo.
+step(1)
+say("This is the toolbar.")
+region(1010, 56, 200, 40, "Toolbar", { name: "bar" })
+step(2)
+say("Actually, the sidebar is what you want.")
+erase("bar")
+region(62, 112, 196, 330, "Sidebar")
+write(300, 520, "your files live here", { size: 30, tone: "dark" })
+arrow([296, 540], [250, 420], { bend: 0.25 })
+step(3)
+say("Let me move that note closer.")
+move("p3,p4", 40, -20)
+highlight("p3")
+step(4)
+say("Never mind the highlight.")
+undo()
+text(300, 640, "Words stay readable on dark screens.", { size: 22 })
+```

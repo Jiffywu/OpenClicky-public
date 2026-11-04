@@ -1,0 +1,9 @@
+[
+  {"id": "e1", "role": "heading", "label": "Bridge test page", "frame": [32, 32, 246, 40]},
+  {"id": "e2", "role": "text field", "label": "Your name", "frame": [113, 125, 153, 21]},
+  {"id": "e3", "role": "pop-up menu", "label": "Favorite color", "frame": [134, 157, 60, 19]},
+  {"id": "e4", "role": "password field", "label": "Password", "frame": [106, 186, 153, 21]},
+  {"id": "e5", "role": "button", "label": "Say hello", "frame": [32, 217, 71, 21]},
+  {"id": "e6", "role": "text", "label": "Hello, Jeff! You picked Green.", "frame": [32, 254, 560, 40]},
+  {"id": "e7", "role": "link", "label": "Go to the second page", "frame": [32, 309, 165, 20]}
+]

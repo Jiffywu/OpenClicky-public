@@ -1,0 +1,6 @@
+step(1)
+say("It's the Say hello button. It takes your name and color and writes a greeting.")
+callout(67, 227, "Reads name and color", {side: "below"})
+step(2)
+say("Here it used Jeff and Green, so the box says hello to you.")
+region(33, 255, 558, 38, "Greeting")

@@ -1,0 +1,31 @@
+.build/
+.swiftpm/
+*.xcodeproj/
+DerivedData/
+dist/
+*.app/
+node_modules/
+.env
+.env.*
+captures/
+evidence/raw/
+*.mitm
+*.flow
+.DS_Store
+
+# Private captures and generated validation output stay local.
+/docs/evidence/
+/evidence/
+/diagnostics/
+/recordings/
+/transcripts/
+/private/
+*.log
+*.jsonl
+
+# Local configuration and signing credentials.
+/config.local.*
+*.pem
+*.key
+*.p12
+*.pfx

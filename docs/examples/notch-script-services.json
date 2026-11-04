@@ -1,0 +1,24 @@
+{
+  "display": { "id": 1, "width": 1710, "height": 1112, "notch": [751, 959, 37.5] },
+  "steps": [
+    { "at": 0.0, "note": "The browser extension connects", "browsers": ["com.google.Chrome"] },
+    { "at": 6.0, "note": "Always-on voice starts and waits for the user", "alwaysOn": true },
+    { "at": 8.0, "note": "A routine's run finishes while always-on listens", "report": { "jobID": "j7", "run": 3, "title": "Morning brief",
+               "outcome": "done", "spoken": "Three meetings today; the 2 pm moved to 3.", "file": "/tmp/jobs/j7/brief.md", "routineID": "r1" } },
+    { "at": 20.0, "note": "The user stops always-on from its card", "action": "stop" },
+    { "at": 21.0, "note": "A voice turn: the pill has a Stop", "activity": true, "stoppable": "voice" },
+    { "at": 22.0, "note": "Spending crosses the warning share while the turn runs", "usage": "warned" },
+    { "at": 23.0, "note": "The user clicks the pill's Stop", "stop": true },
+    { "at": 23.1, "activity": false, "stoppable": "none" },
+    { "at": 40.0, "note": "OpenRouter can't be reached, twice", "providerDown": "OpenRouter" },
+    { "at": 41.0, "providerDown": "OpenRouter" },
+    { "at": 60.0, "note": "A take-over drive starts", "takeover": "Rename the three screenshots on the Desktop" },
+    { "at": 62.0, "note": "The limit is reached during the drive", "usage": "stopped" },
+    { "at": 90.0, "note": "The user stops the drive from its card", "action": "stop" },
+    { "at": 90.5, "takeoverEnds": true },
+    { "at": 95.0, "note": "A routine run fails", "report": { "jobID": "j8", "title": "Weekly invoices", "outcome": "failed",
+               "spoken": "Codex couldn't sign in.", "routineID": "r2" } },
+    { "at": 110.0, "note": "The browser goes away", "browsers": [] }
+  ],
+  "tail": 15
+}

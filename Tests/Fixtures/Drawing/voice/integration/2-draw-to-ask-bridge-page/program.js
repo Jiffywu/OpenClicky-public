@@ -1,0 +1,7 @@
+step(1)
+say("That's the result message from the page.")
+callout(600, 274, "The page's result text", {side: "right"})
+step(2)
+say("It's written after you press Say hello, using your name and color.")
+step(3)
+say("Change the name or color, press the button, and it updates.")

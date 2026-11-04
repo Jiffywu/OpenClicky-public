@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>OpenClicky</title>
+    <style>
+      body { font: 13px -apple-system, system-ui, sans-serif; width: 280px; margin: 12px; color: #1d1d1f; }
+      h1 { font-size: 14px; margin: 0 0 8px; }
+      .row { display: flex; justify-content: space-between; margin: 4px 0; }
+      .ok { color: #1a7f37; }
+      .bad { color: #b35c00; }
+      .muted { color: #6e6e73; font-size: 11px; word-break: break-all; }
+      .buttons { display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap; }
+      button { font: inherit; padding: 4px 10px; }
+    </style>
+  </head>
+  <body>
+    <h1>OpenClicky</h1>
+    <div class="row"><span>Host</span><span id="host">…</span></div>
+    <div class="row"><span>OpenClicky app</span><span id="app">…</span></div>
+    <div class="row"><span>Agent access</span><span id="access">…</span></div>
+    <div class="row"><span>Actions run</span><span id="count">0</span></div>
+    <p id="error" class="muted"></p>
+    <p id="ids" class="muted"></p>
+    <div class="buttons">
+      <button id="stop" title="Stop agents from using this browser until you resume">Stop agent</button>
+      <button id="open">Open OpenClicky</button>
+      <button id="reconnect">Reconnect</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

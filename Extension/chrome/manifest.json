@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "OpenClicky",
+  "description": "Lets OpenClicky's agents read and act in your browser tabs when you ask them to.",
+  "version": "0.2.0",
+  "minimum_chrome_version": "116",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3GIegyHao22v7c1oHiTSb89kYGQ3Iu3Vt/uc6KtBRLkXmv0oES5v6x6nGme8uUB8RJxaXqSnD8CXC/DtpNGW0BGSLmFzAQgZZsC3RbDw+yuEEFzO6QeuhF3HuC4AFDW+jjfRriyjLiyg16eCBOIB9G8U4OCYvuluL37Q9PYAHW/GU6qr1No/eKDo09M3t2VnpyEJ9atuuATGrgXya7Cc4vwRAP6ESjloiCHKladuGSZ0Dr3/Wa/U+51WA3+D68A1hYviy7uNDi6fCQp0UWcfUmqHPUR+HSxY+Wyb9xi2xIXR44dcsmPjonGP/PxU6Edm6Hy616wRGh5pxvPPEUISDQIDAQAB",
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "nativeMessaging",
+    "tabs",
+    "tabGroups",
+    "scripting",
+    "storage",
+    "alarms"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_title": "OpenClicky",
+    "default_popup": "popup.html"
+  }
+}

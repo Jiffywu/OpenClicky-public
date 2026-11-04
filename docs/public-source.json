@@ -1,0 +1,3619 @@
+{
+  "format": 1,
+  "source_repository": "Jiffywu/OpenClicky",
+  "source_commit": "9590c5d57b2efa1f996c52be73e3c9fd3b0f4982",
+  "source_tree": "e41fe78d4048a251281564ee3a9db890da4706cb",
+  "history_mode": "clean-public-snapshot",
+  "contributors": [
+    {
+      "github": "Jiffywu",
+      "archive_author_names": [
+        "Jeff",
+        "jiffywu"
+      ]
+    }
+  ],
+  "source_files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "blob": "cbeaf4a22b2456ac44223301b17ab0184224cc7f"
+    },
+    {
+      "path": ".gitignore",
+      "blob": "ea26611fa7f072ad1dfad9f42e6ae646b200ac2a"
+    },
+    {
+      "path": "AGENTS.md",
+      "blob": "e7786d1029f6056aaea6ff7e972408c343eb3f42"
+    },
+    {
+      "path": "Extension/chrome/README.md",
+      "blob": "bc86479b25547814e8a2b3dec1698cb28e1899fe"
+    },
+    {
+      "path": "Extension/chrome/background.js",
+      "blob": "a53be97be1ccb1529cf99c34a2971b05658d90a4"
+    },
+    {
+      "path": "Extension/chrome/manifest.json",
+      "blob": "bca601c2f4affc489565765d1434d8b705308048"
+    },
+    {
+      "path": "Extension/chrome/page-agent.js",
+      "blob": "ee219e79a3de542490d75ebf272f5fcbda5d6ad5"
+    },
+    {
+      "path": "Extension/chrome/policy.js",
+      "blob": "ead4cf4eab424aaa7f55bceb6ebc474ef3016cbf"
+    },
+    {
+      "path": "Extension/chrome/popup.html",
+      "blob": "54c4313be66a8d58aeb905d09fe96c516528bcdd"
+    },
+    {
+      "path": "Extension/chrome/popup.js",
+      "blob": "bcbca92bdf78c374d23a266e48e8ab15e9f6e38e"
+    },
+    {
+      "path": "Extension/chrome/tests/approve-fixture-browser.py",
+      "blob": "d2916f47dc2b45f99654fdb136b4ecf71a8651d8"
+    },
+    {
+      "path": "Extension/chrome/tests/background.test.mjs",
+      "blob": "e8dd86b4f4e15b71c1a573fdb7d4397e8d58217d"
+    },
+    {
+      "path": "Extension/chrome/tests/e2e.sh",
+      "blob": "d3c6eac94c776e6e14af4c870df6e7124448ef5d"
+    },
+    {
+      "path": "Extension/chrome/tests/mcp-sdk-check.mjs",
+      "blob": "aff0ab4d9538d9c348c56350f2d96ff83a46c7d4"
+    },
+    {
+      "path": "Extension/chrome/tests/page.html",
+      "blob": "2a43cc2ed307d41c0d7e8fc6682e1307d2e22d58"
+    },
+    {
+      "path": "Extension/chrome/tests/page2.html",
+      "blob": "eea0895aa9d526e8e560da71601586ecfecc6474"
+    },
+    {
+      "path": "Extension/chrome/tests/policy.test.mjs",
+      "blob": "cb48542dce2b35f72055160192f83f0fabec107d"
+    },
+    {
+      "path": "Extension/chrome/tests/popup.mjs",
+      "blob": "85b599d77efb008edf8a1daa61684544f3df9849"
+    },
+    {
+      "path": "Extension/chrome/tests/serve.js",
+      "blob": "900b43281950da9f9b69480e2c0c54a11ef260da"
+    },
+    {
+      "path": "Extension/chrome/tests/tabgroups.mjs",
+      "blob": "e1c214b62cd71360eecea5bcc5822d03ae9bc655"
+    },
+    {
+      "path": "LICENSE",
+      "blob": "394a83516423a929ba3298e7a7adce6b4a7c4dc7"
+    },
+    {
+      "path": "PRIVACY.md",
+      "blob": "1d069617145bf511fd87814118f06de1abfdde04"
+    },
+    {
+      "path": "Package.swift",
+      "blob": "94d99f968f5b5b7a1ca57e06b914d2d4d7000818"
+    },
+    {
+      "path": "README.md",
+      "blob": "f46fc005931b6481d8bcb49e8a301508b03f1521"
+    },
+    {
+      "path": "Resources/App/AppIcon.icns",
+      "blob": "14e5d07c72294e19b44cf496ef99fdf64274995d"
+    },
+    {
+      "path": "Resources/Artwork/AppIcon-prompt.txt",
+      "blob": "34cf3fdd5cb8e6f488461a11e2b64509b1625bd7"
+    },
+    {
+      "path": "Resources/Artwork/AppIcon-source.png",
+      "blob": "4dc7809ba79109022741ca0319a1fb93ee15cc48"
+    },
+    {
+      "path": "Resources/Artwork/README.md",
+      "blob": "63f9bf4ae33c39b52da74ef056a0904f6c274cbe"
+    },
+    {
+      "path": "SECURITY.md",
+      "blob": "34a2eedde24629953b8a171c1b95286abdcd3997"
+    },
+    {
+      "path": "Sources/OpenClicky/Agents/AgentAnswerViews.swift",
+      "blob": "4b89ad7e173a64d03aef26ec4e934e8d6a4c0455"
+    },
+    {
+      "path": "Sources/OpenClicky/Agents/AgentHUDModel.swift",
+      "blob": "8b2057f514129e39cd705471e3175db529efe8c1"
+    },
+    {
+      "path": "Sources/OpenClicky/Agents/AgentHUDPanel.swift",
+      "blob": "53b02250b2d1c6abc5ca9fc5917dba319973a824"
+    },
+    {
+      "path": "Sources/OpenClicky/Agents/AgentHUDView.swift",
+      "blob": "f9ac523c7ff0d1c325e3ca0e6cbc28ed968a0ff1"
+    },
+    {
+      "path": "Sources/OpenClicky/Agents/AgentJobsBrowserView.swift",
+      "blob": "c8e7815c6ba252d288d38a1f0ee1cf4dfd455955"
+    },
+    {
+      "path": "Sources/OpenClicky/Agents/AgentNotifier.swift",
+      "blob": "dbaba4f007005d5d9d9fd8a07c78cef838f5a8ed"
+    },
+    {
+      "path": "Sources/OpenClicky/Agents/AgentResultCardView.swift",
+      "blob": "8cd61824ec24ebea69e668e35c4d946122403946"
+    },
+    {
+      "path": "Sources/OpenClicky/Agents/AgentServices.swift",
+      "blob": "a4e18753d47bcf4efe1d5a98aa477612a418b992"
+    },
+    {
+      "path": "Sources/OpenClicky/Agents/AgentSnapshots.swift",
+      "blob": "c905cc3f73df5b0ed4c907d5a3a33469e3bd3008"
+    },
+    {
+      "path": "Sources/OpenClicky/Agents/AppBrowserBridge.swift",
+      "blob": "c5058416332c0606bcb232d1d4184a02c0355f55"
+    },
+    {
+      "path": "Sources/OpenClicky/App/AppModel.swift",
+      "blob": "1fe7bdd79d6a629d0023bf25835ab4a2f2d1b0d3"
+    },
+    {
+      "path": "Sources/OpenClicky/App/AppURLRouter.swift",
+      "blob": "5206c5018a16eaa7f911c12d2a7ddfb4ce1fec6b"
+    },
+    {
+      "path": "Sources/OpenClicky/App/OpenClickyApp.swift",
+      "blob": "4422e6243712843ee619ba1daa4c2b62ccabaedd"
+    },
+    {
+      "path": "Sources/OpenClicky/Dictation/DictationCoordinator.swift",
+      "blob": "0682c749ef6e91c072212757d389ba26aa709741"
+    },
+    {
+      "path": "Sources/OpenClicky/Dictation/DictationHUDPanel.swift",
+      "blob": "d14efd2b3099b0935f63da29b6e6cf4997109ee8"
+    },
+    {
+      "path": "Sources/OpenClicky/Dictation/DictationHUDView.swift",
+      "blob": "137276e350796f4b5b9090af604814eac5ab69c8"
+    },
+    {
+      "path": "Sources/OpenClicky/Dictation/DictationKeyMonitor.swift",
+      "blob": "48d22f50aaf2dda5980ad132183c6e5249288119"
+    },
+    {
+      "path": "Sources/OpenClicky/Dictation/DictationMicrophone.swift",
+      "blob": "5fe2317a1602b949004ea37001f2102568f8b69a"
+    },
+    {
+      "path": "Sources/OpenClicky/Guided/GuidedPointerMonitor.swift",
+      "blob": "a50ca82ad7ba7e7d28a7ceeed3c3cae78dd37877"
+    },
+    {
+      "path": "Sources/OpenClicky/Guided/PointingOverlayModel.swift",
+      "blob": "716241a48e3aff12c923f7f85d20153860fa64e2"
+    },
+    {
+      "path": "Sources/OpenClicky/Home/EvidenceSnapshots.swift",
+      "blob": "28d1e0ffaea32cd0eefa2eb90563ce34b1e7972b"
+    },
+    {
+      "path": "Sources/OpenClicky/Home/HomeChatView.swift",
+      "blob": "7e71effbc6b538db9142828e8fbabe7e2a3f180d"
+    },
+    {
+      "path": "Sources/OpenClicky/Home/HomeDrawingsView.swift",
+      "blob": "288d204be657c513060998582d8e36a8ca653ada"
+    },
+    {
+      "path": "Sources/OpenClicky/Home/HomeModels.swift",
+      "blob": "029bb4d36cf92e8546e9b8c77a9022621b3b1f9b"
+    },
+    {
+      "path": "Sources/OpenClicky/Home/HomeServices.swift",
+      "blob": "c52e95ea80664e22455c8130a174fa4c60188352"
+    },
+    {
+      "path": "Sources/OpenClicky/Home/HomeView.swift",
+      "blob": "b0ec94f1ab6d6bc1dc1f07b91989beb144d1a213"
+    },
+    {
+      "path": "Sources/OpenClicky/Home/HomeWindows.swift",
+      "blob": "03cf86d84bbaa3494f5a424f93635772fb137fc8"
+    },
+    {
+      "path": "Sources/OpenClicky/Home/OnboardingModel.swift",
+      "blob": "6f9a3922b251a3d3430e3178d7ceb0cb68e568dd"
+    },
+    {
+      "path": "Sources/OpenClicky/Home/OnboardingStepSnapshots.swift",
+      "blob": "79f4fbe40657e91a6ec8fa5cc224d5bd3e51b925"
+    },
+    {
+      "path": "Sources/OpenClicky/Home/OnboardingView.swift",
+      "blob": "1e71d94a0561464fc9a4047fb93e1c6fabfaf24c"
+    },
+    {
+      "path": "Sources/OpenClicky/Home/SkillsLibraryViews.swift",
+      "blob": "9468551a17e0eb1efefabf7f45288360a1e7e50b"
+    },
+    {
+      "path": "Sources/OpenClicky/Home/SkillsSnapshots.swift",
+      "blob": "87a3cab63f510c1bb0127d5f8548a7f4ac647acc"
+    },
+    {
+      "path": "Sources/OpenClicky/Input/TalkKeyMonitor.swift",
+      "blob": "0a3608ed51ab4a686b44a0a0591e5c8610324833"
+    },
+    {
+      "path": "Sources/OpenClicky/Integrations/ConnectedAppsModel.swift",
+      "blob": "7d63a0e409569f3ad593358b0bfb92c4b276101a"
+    },
+    {
+      "path": "Sources/OpenClicky/Integrations/ConnectedAppsSettings.swift",
+      "blob": "75809cd3bac71f0edafe87e646bb31c81e58f99e"
+    },
+    {
+      "path": "Sources/OpenClicky/Integrations/ConnectedAppsSnapshots.swift",
+      "blob": "06f33eb425eaec5376262b7afe45a72e2e781955"
+    },
+    {
+      "path": "Sources/OpenClicky/Lookups/ServicesSettingsModel.swift",
+      "blob": "6849b2ed5b75b1c30af51ce1059552eb7dacac1a"
+    },
+    {
+      "path": "Sources/OpenClicky/Lookups/ServicesSettingsView.swift",
+      "blob": "a923fc470b2f42c97b65c37f0c2c9afbaa2842e5"
+    },
+    {
+      "path": "Sources/OpenClicky/Memory/MemorySettingsModel.swift",
+      "blob": "5a0365eb5f8a6b4b5894867144130b5d6672e792"
+    },
+    {
+      "path": "Sources/OpenClicky/Memory/MemorySettingsView.swift",
+      "blob": "25853dce49f1aea9614ef38967a6fa74dfbe8f7e"
+    },
+    {
+      "path": "Sources/OpenClicky/Notch/NotchController.swift",
+      "blob": "0444b270bbfbf1fb3f10870f8293eaa72b5a1c21"
+    },
+    {
+      "path": "Sources/OpenClicky/Notch/NotchModel.swift",
+      "blob": "a54e977c58cda5ff8c54d24813fd05aa83c8e53c"
+    },
+    {
+      "path": "Sources/OpenClicky/Notch/NotchSnapshots.swift",
+      "blob": "64f33d7deccc0753423c6aa1d85525a5ba5718ce"
+    },
+    {
+      "path": "Sources/OpenClicky/Notch/NotchViews.swift",
+      "blob": "f8ddc92d9ae766cffcf124c5db19181acdeb1257"
+    },
+    {
+      "path": "Sources/OpenClicky/Notch/NotchWindowManager.swift",
+      "blob": "d87a95ec6b393ff9689fab4c57dff19d2f7eb197"
+    },
+    {
+      "path": "Sources/OpenClicky/Overlay/OverlayController.swift",
+      "blob": "21290b194d2940ac819188809f49ef6489bdb5bc"
+    },
+    {
+      "path": "Sources/OpenClicky/Overlay/OverlayDrawingSurfaces.swift",
+      "blob": "96f3761fdb334d82c5e6cebc04d9ba091f9da1fa"
+    },
+    {
+      "path": "Sources/OpenClicky/Overlay/OverlayRootView.swift",
+      "blob": "6319b66fb7685d7c13fc6e4150d7bcd35df39e1d"
+    },
+    {
+      "path": "Sources/OpenClicky/Overlay/VoiceOverlayViews.swift",
+      "blob": "86650a61646f8bdcc1563039890b33608461280d"
+    },
+    {
+      "path": "Sources/OpenClicky/Permissions/PermissionsCenter.swift",
+      "blob": "58e1214c4c962785f4d98b59e81483e35dbf7eae"
+    },
+    {
+      "path": "Sources/OpenClicky/Pointer/BuddyPointerController.swift",
+      "blob": "89e97f34d7504b8ff1f5a95a1b020df9143a4b3b"
+    },
+    {
+      "path": "Sources/OpenClicky/Pointer/BuddyPointerLayer.swift",
+      "blob": "a207838ef2083b21b861f3895836bdb4452faf1f"
+    },
+    {
+      "path": "Sources/OpenClicky/Pointer/ScreenLookService.swift",
+      "blob": "7eb502edaecb5185267e500384fa5145683958f2"
+    },
+    {
+      "path": "Sources/OpenClicky/Previews/FilePreviewPane.swift",
+      "blob": "cff50b433333097b0e88251035c1f70bf0f557aa"
+    },
+    {
+      "path": "Sources/OpenClicky/Previews/FilePreviewViews.swift",
+      "blob": "6184a54945037b60645e2064ac0a173209d8e0d6"
+    },
+    {
+      "path": "Sources/OpenClicky/Previews/MarkdownDocumentView.swift",
+      "blob": "7fdacd5f7dfb2fcf5c4e32e60f0e70029082cf1a"
+    },
+    {
+      "path": "Sources/OpenClicky/Previews/PreviewSnapshots.swift",
+      "blob": "bf7f16ba0109f530c744fc465ac4c8633003dd33"
+    },
+    {
+      "path": "Sources/OpenClicky/Settings/AgentsAndRoutinesPages.swift",
+      "blob": "495c62d1ed915e46a2f4bef486e6af1ec8729a4b"
+    },
+    {
+      "path": "Sources/OpenClicky/Settings/AgentsUXSettings.swift",
+      "blob": "70e4a5bed6cb76648e3d5af399ddb33ff9c8dace"
+    },
+    {
+      "path": "Sources/OpenClicky/Settings/AgentsUXSnapshots.swift",
+      "blob": "f8ec63bb83fc8d41f96efd89cccf123522eadd11"
+    },
+    {
+      "path": "Sources/OpenClicky/Settings/AppBehaviorModel.swift",
+      "blob": "edb0ac90e64816400b64cb3b34ee00feb82b9c17"
+    },
+    {
+      "path": "Sources/OpenClicky/Settings/BrowserSettingsPage.swift",
+      "blob": "aeb08eab650bc8c510eac19b71a0a31e57217aed"
+    },
+    {
+      "path": "Sources/OpenClicky/Settings/InfraSettingsModel.swift",
+      "blob": "05a846e728890e40a3f576245c97a3a2e0cec157"
+    },
+    {
+      "path": "Sources/OpenClicky/Settings/InfraSettingsPages.swift",
+      "blob": "5e3147e717b28bdfc697833f15d693ce7689c757"
+    },
+    {
+      "path": "Sources/OpenClicky/Settings/InfraSnapshots.swift",
+      "blob": "bcda8bf4cbff2ee2344242b89c377e1cf55a3641"
+    },
+    {
+      "path": "Sources/OpenClicky/Settings/MicrophoneAndDictationPages.swift",
+      "blob": "fc3a3ae8313bd0c8715121ef49c49d56bb6319ec"
+    },
+    {
+      "path": "Sources/OpenClicky/Settings/MicrophoneSettingsSection.swift",
+      "blob": "6c1742d4001e8f1e39acd8a8d22f2a072c614217"
+    },
+    {
+      "path": "Sources/OpenClicky/Settings/SettingsPages.swift",
+      "blob": "1075c3f04a1cb796a724430074ba3b050934b976"
+    },
+    {
+      "path": "Sources/OpenClicky/Settings/SettingsView.swift",
+      "blob": "dbb4dca1d4e7aab29d626564e291212550274c11"
+    },
+    {
+      "path": "Sources/OpenClicky/Settings/SettingsWindow.swift",
+      "blob": "10a137fe46a83479c7c076c2aebba1d786be5472"
+    },
+    {
+      "path": "Sources/OpenClicky/Settings/VoiceAndKeysModels.swift",
+      "blob": "f42ac5e52cedd5db0109852039122dfd93daf18a"
+    },
+    {
+      "path": "Sources/OpenClicky/Support/ObservationLoop.swift",
+      "blob": "e032ed4b54b1df0a9b92bca300ffd750e2f8f25c"
+    },
+    {
+      "path": "Sources/OpenClicky/Support/ViewState.swift",
+      "blob": "6a6524712f1eebfab01755cc1df009ce8e1b0741"
+    },
+    {
+      "path": "Sources/OpenClicky/Takeover/TakeoverConsentCard.swift",
+      "blob": "e64b471538426f8a5821e21266c9615e73301f06"
+    },
+    {
+      "path": "Sources/OpenClicky/Takeover/TakeoverInputBlocker.swift",
+      "blob": "3660ef1d8bad8bd04deb160a98bc5f85cdaf1bbf"
+    },
+    {
+      "path": "Sources/OpenClicky/Takeover/TakeoverOverlayView.swift",
+      "blob": "59f8fc895add2ea5bf687e846294507f7a2c1c4a"
+    },
+    {
+      "path": "Sources/OpenClicky/Takeover/TakeoverPanels.swift",
+      "blob": "b6897273bcb67bcc1de55c3e3ce0a3c0226082b6"
+    },
+    {
+      "path": "Sources/OpenClicky/Takeover/TakeoverServices.swift",
+      "blob": "7b9aaf86ea81cb390c292baa33949392020cd346"
+    },
+    {
+      "path": "Sources/OpenClicky/Voice/AudioNoticePanel.swift",
+      "blob": "11e00ee2b446aa1ebf68c8f56acf2e5983372971"
+    },
+    {
+      "path": "Sources/OpenClicky/Voice/AudioRobustness.swift",
+      "blob": "4c757eb24fa3ecc711273d82a8b4949ccc16446e"
+    },
+    {
+      "path": "Sources/OpenClicky/Voice/LatencyStatsPanel.swift",
+      "blob": "583058c8d1a097939951780964045f40f6330a30"
+    },
+    {
+      "path": "Sources/OpenClicky/Voice/TypedTurnPanel.swift",
+      "blob": "c5db2195ba9d55aaa0851e503fa533cb47a7492e"
+    },
+    {
+      "path": "Sources/OpenClicky/Voice/VoiceLoopController.swift",
+      "blob": "8f80a1bfa8906978095f717730fb5dccacfab8dc"
+    },
+    {
+      "path": "Sources/OpenClicky/Voice/VoiceOverlaySnapshots.swift",
+      "blob": "cd2daf3b208697bbb0c4c92b762db03099606f7f"
+    },
+    {
+      "path": "Sources/OpenClickyBrowserHost/main.swift",
+      "blob": "9858e7e456fbc195a248ddee1a7106bc3d279a67"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentActivityFeed.swift",
+      "blob": "25bc6bfc2fde249e6353bc72cb27e704f3f681b8"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentClickyTools.swift",
+      "blob": "7552475b94ba5b5ea4d460a1f9d7e2906f409297"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentClickys.swift",
+      "blob": "1b90f62d5e1073a73243cbfc5481cd0491c786d7"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentConnectedApps.swift",
+      "blob": "3a1e60597946770c514f86ad3938528b68835be9"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentConnectorRelay.swift",
+      "blob": "8e7782cbcb9920d5bc0896336776c1f5ce1d741b"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentContextScreen.swift",
+      "blob": "88e42acd7126fbe886083d0126f8bc475bfe11af"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentCoordinator.swift",
+      "blob": "1dfce0ab1202ad1deb342305d1fae97d588c2eb8"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentEvent.swift",
+      "blob": "d7d93a3fe7db7f767525314704f5e3c1a6d5a4e9"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentFileDiffs.swift",
+      "blob": "1c0459b05b82d841eb65faf98be62ebef7b28e60"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentFinalBlocks.swift",
+      "blob": "7c978f7a8335e5a4f65f889f5669c1210b10822b"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentFinalReport.swift",
+      "blob": "2ecc675ce5fb2173c228ea8e4abb73ae66c55768"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentHarness.swift",
+      "blob": "ed4b1b04e0ad3e8d9d12fe5eacd0c19963b5d0a9"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentHarnessExit.swift",
+      "blob": "4e4790f853e5aeefcb5f4dd260b6c711b9e4f289"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentInstructions.swift",
+      "blob": "8abc9a9371823a2340de481c4058e808b8dd8960"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentJobLedger.swift",
+      "blob": "ccacf915584bf7d8a7a451baae2ddc9aa42444c5"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentJobMCPTools.swift",
+      "blob": "de35c224869f15bbaf8afcc5eb05588c333dbb84"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentJobReport.swift",
+      "blob": "bdaac1681e72e852f2bb39ba5bb0ac32d375c611"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentJobStore.swift",
+      "blob": "f4bb7849569c39d432c90344402032bfbe91cadc"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentLaunchLabeler.swift",
+      "blob": "71841329a1f570c8d8a5dabe612cb6cd70b88800"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentLimits.swift",
+      "blob": "67d513cd7ec15d3e5bd2d56874b9d8346f6838db"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentMCPDiscovery.swift",
+      "blob": "1db0ceff5cb6fcfb1434b12ad0e5638f329fa82d"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentManager.swift",
+      "blob": "6e6500fd3682d3b6611763cff7e16ef980b1dc13"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentOrganizer.swift",
+      "blob": "42df9347498108beb172580e15e6ac68fd396946"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentResultCard.swift",
+      "blob": "3d366e0a0e5fe817b2e3ddb75347d8631b5ca3ab"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentRoutines.swift",
+      "blob": "f735ac59ce726d665bfc68098648291bd0111c8b"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentTaskAssets.swift",
+      "blob": "0b8b8d61595ef05f3719770a9a299c4a27828d4f"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentTools.swift",
+      "blob": "1635631ef7f08cb8ebd55441b8f001eeca6765c1"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentTranscript.swift",
+      "blob": "dd45b2c2010d855919c2a064ebefbe9f19e29328"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/AgentUsageMeter.swift",
+      "blob": "0b969dd2a0234e11e7942d96a1d4a3ef30a13f21"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/ClaudeCodeHarness.swift",
+      "blob": "d54864d3917ed6fe980a95f7896bb58b70d2cb18"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/CodexConfig.swift",
+      "blob": "ba6ab6b4a4916a80fb2ab04b2a8257d395479557"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/CodexHarness.swift",
+      "blob": "8b8df2eac5581cb8393001a73325f88c9130916a"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Agent/RoutineConditions.swift",
+      "blob": "3bd7073454604cfe4aaabb62bec6d30d00d8fedd"
+    },
+    {
+      "path": "Sources/OpenClickyKit/AppTools/AppTool.swift",
+      "blob": "6b1d76bfd262b8a491ba7e767498af4489ca9298"
+    },
+    {
+      "path": "Sources/OpenClickyKit/AppTools/AppToolFakes.swift",
+      "blob": "155a057669583f71f6255da1ed4e0e7a0fbdd5f9"
+    },
+    {
+      "path": "Sources/OpenClickyKit/AppTools/AppToolSystem.swift",
+      "blob": "5d0f1851b8d0304a4d52f6850847c3a6d10cdeeb"
+    },
+    {
+      "path": "Sources/OpenClickyKit/AppTools/AppToolbox+Standard.swift",
+      "blob": "8eee674c95f3ba8572c0e65a499e8a29be8ce418"
+    },
+    {
+      "path": "Sources/OpenClickyKit/AppTools/Calendar/CalendarService.swift",
+      "blob": "c76ad1d398551483e5de688fda86a781ebfd81b7"
+    },
+    {
+      "path": "Sources/OpenClickyKit/AppTools/Calendar/CalendarStore.swift",
+      "blob": "dbe5d803137ff441fecfae5b079db331cd0ca142"
+    },
+    {
+      "path": "Sources/OpenClickyKit/AppTools/Calendar/CalendarTime.swift",
+      "blob": "74b4531403cbbe056ca24a63fa8cd070366cc92a"
+    },
+    {
+      "path": "Sources/OpenClickyKit/AppTools/Calendar/CalendarTools.swift",
+      "blob": "f0d7ae0914ba925efe5112f66cb56e55a2385667"
+    },
+    {
+      "path": "Sources/OpenClickyKit/AppTools/Calendar/EventKitCalendarStore.swift",
+      "blob": "48816c1ddeadd5dbb21f3ab20c4037d05988c29e"
+    },
+    {
+      "path": "Sources/OpenClickyKit/AppTools/Calendar/MeetingCountdown.swift",
+      "blob": "4451f7638ef1682b1a3f68310573d917cbadeefc"
+    },
+    {
+      "path": "Sources/OpenClickyKit/AppTools/LinkTools.swift",
+      "blob": "b303f9d22aaed83471d07b60fd07e461f07b024f"
+    },
+    {
+      "path": "Sources/OpenClickyKit/AppTools/MacAppToolSystem.swift",
+      "blob": "e1deb668c5401f07ea2854f08845e2abde61434a"
+    },
+    {
+      "path": "Sources/OpenClickyKit/AppTools/Music/MusicPlayer.swift",
+      "blob": "3f00e9f1a7cc6369736239df556c97f57db62ccb"
+    },
+    {
+      "path": "Sources/OpenClickyKit/AppTools/Music/MusicScripts.swift",
+      "blob": "136af68e9e62cbbd327258b9183fabdaa9f29b45"
+    },
+    {
+      "path": "Sources/OpenClickyKit/AppTools/Music/SpotifyCatalog.swift",
+      "blob": "1d722e0ddc414927c92580dbd21a4b30444ee08b"
+    },
+    {
+      "path": "Sources/OpenClickyKit/AppTools/Music/SpotifyURI.swift",
+      "blob": "289e759b4daae8776b215c59250815857914d09a"
+    },
+    {
+      "path": "Sources/OpenClickyKit/AppTools/ToolArguments.swift",
+      "blob": "a907ba42026cd1ee383789adfb60bc9bbb4875c1"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Audio/AudioDevices.swift",
+      "blob": "591303f68db1130f777aeae4ca9f9c781b240e90"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Audio/AudioEngineHost.swift",
+      "blob": "2a817958772e77961bf21a6b5d1234a8df175b3c"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Audio/AudioFakes.swift",
+      "blob": "8a43390ad6962441e4af79405154565cffad3064"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Audio/AudioLevel.swift",
+      "blob": "cb828d80d73b0e2b0747091785c86ddc711c1bd5"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Audio/AudioSupport.swift",
+      "blob": "1f8dc80e42a6e784a7dccd1dc6fd9ae5206372ca"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Audio/EchoCancellation.swift",
+      "blob": "82aa3f0a41eb6db1848f7e92f8edc7f608ef87d7"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Audio/MicHealth.swift",
+      "blob": "88f9347eca00c60290338aad6ab6befefd9fef17"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Audio/MicTrouble.swift",
+      "blob": "8cfbe093e75712ac9476c7be7057cba6c77740ec"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Audio/MicrophoneCapture.swift",
+      "blob": "3780046a4c4ece78859de764a367bf15c7b84085"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Audio/OutputVolume.swift",
+      "blob": "36732926da0ac3d583a0a7ae737e0d39c3b69f86"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Audio/PCMConverter.swift",
+      "blob": "505a633964e2c5730332e823b0df8ae1e82da057"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Audio/SharedMicrophone.swift",
+      "blob": "efdf2d5631d8ed829d084fac3870d614956068d2"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Audio/SpeechPlaybackBackend.swift",
+      "blob": "4c7d75a0fff77da1c157fd5ef0a0a35345a21b3a"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Audio/SpeechPlayer.swift",
+      "blob": "e28a816950d1374080cdff6e1d70fe1c3bca26c2"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Audio/UICues.swift",
+      "blob": "33283f9df0ccde9b1342f5495f8cccc7e590c734"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Audio/WAVEncoder.swift",
+      "blob": "e3922b3a132ead9e753f2ef1d3edc39c89e24032"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Brain/BrainCompactor.swift",
+      "blob": "48a3ac59417aaed90c9745e0ceb0c306cca685b1"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Brain/BrainLatencyProbe.swift",
+      "blob": "5a414330fa68584b9ae8d39b329980df5a2b7a49"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Brain/BrainPrompt.swift",
+      "blob": "e269c659c0c87af506fb09ed1180160fc3b5fc89"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Brain/BrainRelay.swift",
+      "blob": "6ba6515ba3893899f6d3de222477df7c2e755860"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Brain/BrainRuntime.swift",
+      "blob": "c4529360985eb92338ba9bf6b174b83d4b331bf8"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Brain/BrainThread.swift",
+      "blob": "c08b960e5c02690efd30f38c75d13dc91d09dd76"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Brain/BrainToolRunner.swift",
+      "blob": "7e4796c85e03fcc39b63a258b3374d461437690f"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Brain/BrainTools.swift",
+      "blob": "6a2d2c2807568349f79e8ed886b5bf6aeb71f511"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Brain/BrainWiring.swift",
+      "blob": "20a7e414a94d8395c7ecbb62a08a2794cc53681e"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Brain/ProgramFenceStripper.swift",
+      "blob": "b73bfc62550edc7c7fcb8dad1436d95b3706eddb"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Brain/SayLineExtractor.swift",
+      "blob": "ee2ce777af87f4b1404822bf57883af479e6acdf"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Brain/TurnContracts.swift",
+      "blob": "99ff2dc6cc3e836e23590eee07e0494b3e53c40c"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Browser/BrowserBridgePaths.swift",
+      "blob": "7554648b601b95a90d4dcb86113fecf0bea8f497"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Browser/BrowserBridgeServer.swift",
+      "blob": "6339e19f30d3ed9d12af1e75ae60e0fb8de44a8e"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Browser/BrowserBridgeService.swift",
+      "blob": "42e567670be6074c7d2e364a9fae85b5ceb783d9"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Browser/BrowserChangeRequest.swift",
+      "blob": "0bcdde4bee5c3225330df549b5885a1b1babc1eb"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Browser/BrowserTool.swift",
+      "blob": "6c4599ae3a9bf1643850ede0fcfb4586afc3cb74"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Browser/BrowserTurns.swift",
+      "blob": "d4258be636bb9c36ab4ae3b84e3bbd296c3e81c4"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Browser/ChromeExtensionIdentity.swift",
+      "blob": "3728f4deca4fbe09512d88b9318508dc38ef0897"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Browser/LoopbackHTTPServer.swift",
+      "blob": "98628af2218f699b33ab0b1a3c4063c93bf2e69d"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Browser/MCPServer.swift",
+      "blob": "fd86e82dc5e8e574da3b038af4bd19591669c78e"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Browser/NativeHostInstaller.swift",
+      "blob": "971cde307bff3ff3984fb32815179c1bdb911b80"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Browser/NativeHostRelay.swift",
+      "blob": "ccf531a87aab6cf8f12fb9826b5d51568bf111ac"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Browser/NativeMessaging.swift",
+      "blob": "bfb3802b7741c9c03b5f3160ba7055b49f459737"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Browser/Sockets.swift",
+      "blob": "0db22d846491a3a6ff303167fb39ca404feae0b9"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Config/ConfigValidator.swift",
+      "blob": "eeb92fa7ddce8d3bfed75cc3203a91e2002fb9f2"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Config/OpenClickyConfig.swift",
+      "blob": "fb22b58add26e21e148f369c307d9440d597f3c4"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Context/AXNode.swift",
+      "blob": "2642d0554dd757a19a652d1110f6e541ab2cf3ef"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Context/AccessibilityContextReader.swift",
+      "blob": "2c326b4517f58bd24ee67a144c5f2d214a77bdb2"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Context/ActiveDocumentReader.swift",
+      "blob": "14ec0278bd698df9487e0f9c3478f250e186aaec"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Context/BrowserPageScripting.swift",
+      "blob": "3a50bb02d24075dfbae2d44e3c8c2c6be37615c9"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Context/ContextRedaction.swift",
+      "blob": "d1b3345adbfba0617cd4927503839c448fa50add"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Context/DocumentFileReader.swift",
+      "blob": "8e43e6463679071cb0f161152e32f771f98a0dd9"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Context/GuardedFolders.swift",
+      "blob": "4f739535b1f108b78594248d5eaefabbf1bd2cd8"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Context/QuietContext.swift",
+      "blob": "64276164063de13e304631c45c598a77544b96d7"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Context/ReadableText.swift",
+      "blob": "6677650c0aaddcd67c1a05a47c51d558a3ce664a"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Context/ScreenContextGatherer.swift",
+      "blob": "b09348fe4724523d080e4927cad647873bbfa161"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Context/ScreenContextTypes.swift",
+      "blob": "0b38130ffded7be55744a42a0a2a5a93b32915b5"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Context/TurnContextBridge.swift",
+      "blob": "a846cea5c16b863773e16e2cb10a0d17d5163fdc"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Context/TurnLook.swift",
+      "blob": "11e777e125e84272c921a04c70f60f2182e59bf6"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Credentials/CredentialStore.swift",
+      "blob": "6b950ab189d63ff30231747895ab52a7c0d4563e"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Dictation/AccessibilityFocusReader.swift",
+      "blob": "d8139424441493e7c1357e3174a76bbfb4ee13ac"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Dictation/AdapterModelClientFactory.swift",
+      "blob": "7828f3de1a7858ab82465e8b242f153735f0ec45"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Dictation/AppTraits.swift",
+      "blob": "7e179a922be860fcaee6fbf365bb3f78bd90ebbc"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Dictation/DictationCleanup.swift",
+      "blob": "031b012b306b7d8f2049ad6e41ab9a39ba002d33"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Dictation/DictationController.swift",
+      "blob": "c22cb76387574b5e01a0f5ed5300e1b82c3055c0"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Dictation/DictationEngagement.swift",
+      "blob": "6771a13ab0bec30fce5613ddf44e55acaa093ace"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Dictation/DictationFallbackTranscription.swift",
+      "blob": "9fbe7b896aa98b9882f2ad5dba91f866793be7ac"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Dictation/DictationSettings.swift",
+      "blob": "aaf0db627cd1f6335e9b6761af402ca7596b723f"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Dictation/DictationTranscriptArchive.swift",
+      "blob": "82d222ac952180089cd96625738b333c35d18799"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Dictation/DictationVocabulary.swift",
+      "blob": "1c72127b330ac0e317958cf3201964d99e5c9015"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Dictation/FocusContext.swift",
+      "blob": "d5f2fa03ad4466d87428652182a6887b26278425"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Dictation/InsertTextTool.swift",
+      "blob": "68421cd0125038f68179d509856e1f3a2629cb0e"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Dictation/KeyboardLayoutKeys.swift",
+      "blob": "b3063fc50869c7adeef47031d1b018dbc63aa4a7"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Dictation/PasteboardAccess.swift",
+      "blob": "338b8d55c7fcf705be55dde8c500557ad5c2ee53"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Dictation/SystemTextInsertion.swift",
+      "blob": "d5cb6b0357fa775b821a8ff54847f1c16aeebdfb"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Dictation/TextInserter.swift",
+      "blob": "06d71a988ddbffe07c643fb3b41a59d8e4975fda"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Drawing/DrawingActions.swift",
+      "blob": "81e98970dd476ecd54761bf4b0295c1dffe83bf1"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Drawing/DrawingColor.swift",
+      "blob": "5ba63e2e30a6349648c5441dcd312274dadffa02"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Drawing/DrawingContracts.swift",
+      "blob": "d225866f4eea4650d45ddd014cd50b2ed5f1e3ca"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Drawing/DrawingDisplayCanvas.swift",
+      "blob": "5e2b6bf315432039558e3720776b47391a93ee29"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Drawing/DrawingEngineHost.swift",
+      "blob": "d5be9d896b470fc1ee4c969aec435e78c4341d4e"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Drawing/DrawingFonts.swift",
+      "blob": "159d219ac31ca34983aa19a35c54de0beb2a3b57"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Drawing/DrawingHandles.swift",
+      "blob": "38e0984bd6a5bff8be65b9258011ef61902c3470"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Drawing/DrawingInk.swift",
+      "blob": "c0b7ca3f026e568bfceda06727e84bd530e87b2d"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Drawing/DrawingLessonReplay.swift",
+      "blob": "22543f4dae7de48f8c446379f362608df553964a"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Drawing/DrawingMedia.swift",
+      "blob": "c73b0c567929b87465dd1d95f5645c65da665ac6"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Drawing/DrawingMediaLive.swift",
+      "blob": "87b831a77904727284ccd59601b05e7a50e5a6e8"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Drawing/DrawingMediaRehearsal.swift",
+      "blob": "0f6585d3aa025fc45e0499dd4a0ff04ff55008d6"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Drawing/DrawingPainter+Interaction.swift",
+      "blob": "1b3fecfc5fca0b80d51bfd8d465b1592b7e60c54"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Drawing/DrawingPainter+Marks.swift",
+      "blob": "7b6172a857e43a9152f7e41d0c985dbb28956792"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Drawing/DrawingPainter+Media.swift",
+      "blob": "fad3f0f28ef7bb92890202fd46b55b00109ab059"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Drawing/DrawingPainter.swift",
+      "blob": "6ec7c96b41d58de9aa1ce8b39e84968e3524abbd"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Drawing/DrawingPointerRouter.swift",
+      "blob": "17801ce8eee4fd061f5193eb02532fdefa01316e"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Drawing/DrawingRehearsal.swift",
+      "blob": "02e665030d79b9fa44fa7131f61d70aa2fbd7af1"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Drawing/DrawingScreenDirective.swift",
+      "blob": "f069ec65a5db6310a5d32beec44379a27925ae00"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Drawing/DrawingScreenSampler.swift",
+      "blob": "591173cbc9ae5a9266aca31b546d3b34b45adbda"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Drawing/DrawingSession+Interaction.swift",
+      "blob": "6b59b016bec7d9eb766028ca749127bf1d21b01c"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Drawing/DrawingSession.swift",
+      "blob": "e0bd6dd61eaf296d308c4160e673a42666cf50dd"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Drawing/DrawingSnapshot.swift",
+      "blob": "03e929c00c1a33d09f83df7f8be7d4af52f68149"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Drawing/DrawingSounds.swift",
+      "blob": "495fe5850e86fd9540989233b65dc315a150a8ff"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Drawing/DrawingStaleWatch.swift",
+      "blob": "260e2520cf547d89d29201ddb674a622bbf85e68"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Ears/AudioFileMicrophone.swift",
+      "blob": "691d76f13752c910f83945a8924b25f937bbb514"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Ears/EarsPressReport.swift",
+      "blob": "56f75f1ed15435e5f73f231c88d89e96108e6eb6"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Ears/SpeechToTextBatch.swift",
+      "blob": "e33c7677c474a5f120408fcc88aa01afbe752442"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Ears/VoiceEars.swift",
+      "blob": "38c623770506ce0f7a8a5ccb6c11e08c9c727b5b"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Ears/VoiceEarsFactory.swift",
+      "blob": "2c59cf095bf14349fb3e08e168689c70e0afc013"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Engines/AlternateVoice.swift",
+      "blob": "82f7885b8b53186cc25bf94d94ef4e880a6b3205"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Engines/EngineFactory.swift",
+      "blob": "44f0a63ff0f01e8ce9e8adc181e93e9b0680ea16"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Engines/JSONValue.swift",
+      "blob": "8b75094dbd983f08b9b1463f1caaaeb51b83bd06"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Engines/LanguageModelClient.swift",
+      "blob": "d8471f21a1f196ba45f9bdea1c7dc0c552b24bb2"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Engines/ProviderContext.swift",
+      "blob": "f2c2dee43e238955888eec0fe8f895f71430d5a6"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Engines/SpeechEngines.swift",
+      "blob": "76a41c7f0b634b5f155da6a5552bfbe151676bfc"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Figure3D/FigureAvailability.swift",
+      "blob": "2e52a287ab5a2850ed235e448d6eee920a2d4a0b"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Figure3D/FigureKernel.swift",
+      "blob": "d867425838ebd23f6298be3b659e87a09fd4813c"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Figure3D/FigureLabelLayout.swift",
+      "blob": "87875f7601e2e1bd5d65df3bb3d02de2c81855ee"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Figure3D/FigureMaterial.swift",
+      "blob": "6ea2954ea350c3034db7f5e8194abf40d75c5d42"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Figure3D/FigureMath.swift",
+      "blob": "2e040ca7413f73b064a33e5e547bde78df0f648b"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Figure3D/FigureMesh.swift",
+      "blob": "b387142e747f22a08ddef75a012d9cf76fd053d0"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Figure3D/FigureProgramHarness.swift",
+      "blob": "3a073f4fdef387b88c750549dd8fa55c2f337110"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Figure3D/FigureRenderer.swift",
+      "blob": "e9e5cd630c511542a059e4287b2a60df1be9fbf8"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Figure3D/FigureScene.swift",
+      "blob": "0045cb8837680e9733295514eea2912285a8507b"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Figure3D/FigureSnapshot.swift",
+      "blob": "421f5bf08ae7b2c15d0e94af84dca00b0ee509b0"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Figure3D/FigureStage.swift",
+      "blob": "7769bfff2810cb3344209b1895a1de4a2e5311e8"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Guided/BuddyGuidance.swift",
+      "blob": "33af778249c81b7c550447fc969b6dddfc2bfeb9"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Guided/GuidedSimulator.swift",
+      "blob": "8986b67cb7acbdd39a281e6540cdb0e993f1be71"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Guided/GuidedTarget.swift",
+      "blob": "5322cc02f50b9503b8c572d895f97dc6cba25fb5"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Guided/GuidedTargetLayer.swift",
+      "blob": "0fb449a55363a5f889b17967eb424f06f68e3405"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Guided/GuidedWalkthrough.swift",
+      "blob": "488f87cec1d0ffc94214fa6baa5b7674c02c5d68"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Guided/GuidedWalkthroughController.swift",
+      "blob": "39812814254d05522adbc8b6379a8d3e674abd70"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Guided/PointingTags.swift",
+      "blob": "897c5b25babab11f6ab1f18d4f32a0c64f45e48c"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Harness/HarnessKind.swift",
+      "blob": "5297396ec880e96121a968ed82ec694190b45b59"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Highlight/HighlightDescriber.swift",
+      "blob": "e776499c25a53fbb44db113dd6167187f695aa99"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Highlight/HighlightGesture.swift",
+      "blob": "4595a8ee884337becb08d8bf39809ab8e7ad6af4"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Highlight/HighlightHarvest.swift",
+      "blob": "ed220f0a0a49b7e1634965907ae8b2b0cdfb796f"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Highlight/HighlightInk.swift",
+      "blob": "149e996d270c8a3ffc873219f2652a94ee1f4fca"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Highlight/HighlightShape.swift",
+      "blob": "3ba36bdf7b3ddb1e506399c2aa6f2e00bae66001"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Highlight/HighlightSimulator.swift",
+      "blob": "652e8b891d719de193a43981af3a4b2b978d74af"
+    },
+    {
+      "path": "Sources/OpenClickyKit/History/DrawingLessons.swift",
+      "blob": "bd944fba2f6931ba5831d89aa8116c88dad65104"
+    },
+    {
+      "path": "Sources/OpenClickyKit/History/DrawingThumbnailer.swift",
+      "blob": "139ddf88591268fa48826a3dba32757272439ade"
+    },
+    {
+      "path": "Sources/OpenClickyKit/History/HistoryRecords.swift",
+      "blob": "0aaf001b4e0b0a04fa5cb38b5fc43926fad04031"
+    },
+    {
+      "path": "Sources/OpenClickyKit/History/HistoryStore.swift",
+      "blob": "b9a1593ec2c58bcfd221b525bb6a34b604903acf"
+    },
+    {
+      "path": "Sources/OpenClickyKit/History/TurnLogBuilder.swift",
+      "blob": "3020192b59952f8105ccc4bfe2601f169f4af9d8"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Infra/Diagnostics.swift",
+      "blob": "ecd7d6d3a43c40306b6d2f4275af75c032f7c55c"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Infra/FeatureFlags.swift",
+      "blob": "38730dbed28064bcc98169c772eba098957439d0"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Infra/LatencyHUD.swift",
+      "blob": "118103ff3da425ebf0d5b39a3caa10575e952716"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Infra/MeteredEngines.swift",
+      "blob": "e8f3a531da6afbc215ff8533c21e71c24b42caa4"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Infra/ProviderDiagnosis.swift",
+      "blob": "3dd9cfc8c86b6b3cc6dd6788b923f913de73a615"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Infra/ProviderResilience.swift",
+      "blob": "3917532331bcb4182b102ad587798b8a266075b8"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Infra/ProviderRetry.swift",
+      "blob": "9ae1a82d5764cf7efeacbfcefb2b5d9a3f4888ad"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Infra/ProviderUnavailableFeed.swift",
+      "blob": "57429181fe51884aa6b7aa314efbb5aa4ff52d73"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Infra/TurnInfra.swift",
+      "blob": "d1e5331895c816c97df36354344d9e856a095eeb"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Infra/UsageLedger.swift",
+      "blob": "5cd9bb031702e9c19885c4c0e5996fe5c8205cd3"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Infra/UsageLimitAlerts.swift",
+      "blob": "7f891f1c615458ab9202d8f6ce5000663c35b3de"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Integrations/AgentExport/ConnectedAppsAgentExport.swift",
+      "blob": "b9a72b02e661a428e415e4e7940b13f62803844d"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Integrations/Composio/ComposioAccounts.swift",
+      "blob": "5f6d49b132abbfb083c4fb20afc4437dab01f92f"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Integrations/Composio/ComposioClient.swift",
+      "blob": "146a9610409b05b64735b055f82dce850bcb1ef3"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Integrations/ConnectedApps/ConnectedAppsHub.swift",
+      "blob": "f01b8d3bd684a4e7f72fc67ce2daae2be1c9dcd9"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Integrations/ConnectedApps/ConnectorFactory.swift",
+      "blob": "814e8be8112494fa1d85451ebdcf71009c04fe99"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Integrations/ConnectedApps/ReadConnectedApps.swift",
+      "blob": "552199aae0468a3534590516e373712d5011c0e6"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Integrations/ConnectedApps/ToolSafety.swift",
+      "blob": "d7f77e9a51e45cf6470b7eef02bda6732a68bd3b"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Integrations/ConnectorRegistry.swift",
+      "blob": "dcf55ba2c685b47acef3eb0f31104ff41e867f60"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Integrations/ConnectorSecretLines.swift",
+      "blob": "eb2b6541704aa72c3dca86f78b70b0ecf88bc993"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Integrations/MCP/MCPClient.swift",
+      "blob": "ee08e967be6215308cbdfec325769b85efee3dc3"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Integrations/MCP/MCPMessages.swift",
+      "blob": "a000260ceb7c5bf4e0954e7df17638a54ae5b52e"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Integrations/MCP/MCPProtocol.swift",
+      "blob": "5eab666f7fe578d797e6357943000df058cc0574"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Integrations/MCP/MCPStdioTransport.swift",
+      "blob": "b1d41f3f51f7ac07fa4e5c7d7e7b694f1f3af963"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Integrations/MCP/MCPStreamableHTTPTransport.swift",
+      "blob": "3a0a5fa436515f48288aa2a9d743d7f768175444"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Integrations/OAuth/LocalHTTPListener.swift",
+      "blob": "3a3ab9374ca787e5ba7aa7bcf467569834eabda8"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Integrations/OAuth/MCPOAuth.swift",
+      "blob": "106cca79a2095da3a77236de8aca57b4e4e13496"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Integrations/OAuth/OAuthDiscovery.swift",
+      "blob": "9292928d6ed6ca5ef746ca9011c3e148565350cb"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Integrations/OAuth/PKCE.swift",
+      "blob": "fd6ef272155828118b26f12f3b32c34dda448cce"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Integrations/OAuth/WWWAuthenticate.swift",
+      "blob": "2af396c8a0c01136c6688d31e541eb32014051e5"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Integrations/Obsidian/ObsidianToolSource.swift",
+      "blob": "dbd664b62d1e8cb6937353e19ba8befbc147e369"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Integrations/Obsidian/ObsidianVault.swift",
+      "blob": "d2f0e6def851c0727ee97020231ca7d503cc99f4"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Lookups/BraveSearch.swift",
+      "blob": "a04bd3759384bd3cf5d0f1abe7455503a9316b07"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Lookups/ExaWebSearch.swift",
+      "blob": "30e9a23fe6e834ad59a407f8e06b2d19f1b310b2"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Lookups/HostedWebSearch.swift",
+      "blob": "024e610e807a8b7059dc5d84bb2c40f2143d05db"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Lookups/ImageSearchService.swift",
+      "blob": "711dea175f91d94ea488637237d37c921f1abe1b"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Lookups/LookupContracts.swift",
+      "blob": "946ae3cb1556a832d6a673ca5e0509978fe3edf5"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Lookups/LookupFormatting.swift",
+      "blob": "e22c439b217796a1bdcbcf9dd49fbd4719c2268e"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Lookups/LookupServices.swift",
+      "blob": "872c71a2670c7cd2e35d149e55b814ae744b8dbb"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Lookups/LookupSupport.swift",
+      "blob": "cd05929e38f1440fee1ef8e3b945699287f57e75"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Lookups/LookupTools.swift",
+      "blob": "945e6d848f9d2e148524e6b2cbb3a12f715d4fc6"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Lookups/MapKitPlaceSearch.swift",
+      "blob": "db88ec9a9fcf25fad6b0f2399cfc5d1cb9b95efc"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Lookups/PageImages.swift",
+      "blob": "591f0c77e278aafbf252e7abc579844e89104543"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Lookups/PeopleFilter.swift",
+      "blob": "3c159520a170df62fbee9a08888c571d1432fc70"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Lookups/ServicesConfig.swift",
+      "blob": "f4da3a00278b0fcac1db5d957133ab538c9b0de1"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Lookups/TavilyWebSearch.swift",
+      "blob": "a5b49dd003838291c7c443965b803752ab004171"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Lookups/TwelveDataQuotes.swift",
+      "blob": "0ae7e8db6dfc14354c943a64907907352050054c"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Lookups/WikimediaCommonsImageSearch.swift",
+      "blob": "446ae1cb095481e0257a89d798704cdc5a468a47"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Memory/AgentHowToLearner.swift",
+      "blob": "b98a438ca8a944a99206825b818a3fcbb505120b"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Memory/MemoryAgentBrief.swift",
+      "blob": "6ca5276763f449d9496ebde186da48bee05ea836"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Memory/MemoryDiff.swift",
+      "blob": "5c644a078d4b3de1bccadebf27173f85af7b3dd3"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Memory/MemoryFileFormats.swift",
+      "blob": "84247dae193ca792700c0b0022611b2fe49763fc"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Memory/MemoryModels.swift",
+      "blob": "860b9e1b548957ba45f6a937c6e102b9e88b8814"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Memory/MemoryProfile.swift",
+      "blob": "895ec4651012f90c8ee04b8e04dd6222d726f2f4"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Memory/MemoryPromptBuilder.swift",
+      "blob": "b43076e73439d2b6aa0b2b41bacacd1666723d46"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Memory/MemoryRanker.swift",
+      "blob": "d71d44dad2813749033d676e24512acb22b9a813"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Memory/MemorySecretScrubber.swift",
+      "blob": "8ae24ba634af362bb5819a3f3ac518e17cd7b1d1"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Memory/MemoryStore.swift",
+      "blob": "a995550a638bc92772114063b8a35d4fa7f1e6e9"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Memory/MemoryTools.swift",
+      "blob": "cbdad5d2db3e12ec0ad14fce3910e8008b8eef88"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Memory/MemoryWriter.swift",
+      "blob": "4aa69993ab50d98f99dabf438f5d5743b4fff59d"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Models/KitResources.swift",
+      "blob": "efcb61d17b9b1b8171aa756a8547520ddcaff510"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Models/ModelCatalog.swift",
+      "blob": "f91abe5aa10962f8e068a7ba8087bd74125a7045"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Models/ModelKind.swift",
+      "blob": "324e0752f842d3ce5195032ac338df5bf1bd4e06"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Models/Slot.swift",
+      "blob": "42c4fa7ed9f49b458e16dc05c3b3bed0c6d666ed"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Notch/NotchEventSources.swift",
+      "blob": "e18d1f3996518686708907d176b7a2fcd0c8aaa7"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Notch/NotchGeometry.swift",
+      "blob": "a4cdf58c5efc2db6e393fd9578553c2a29c4c036"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Notch/NotchLiveEvent.swift",
+      "blob": "591a217aa7fa05f932f041ff089b8bee28684ed0"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Notch/NotchPresenter.swift",
+      "blob": "89d7fd2a644c49336bc58e432a635b49f2a92f2c"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Notch/NotchSettings.swift",
+      "blob": "f06fbfcd141fc02c3dd6806edda5fdd6b4b1c232"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Notch/NotchSimulator.swift",
+      "blob": "ac1d0ea539adcbbf928da9577ce3a1ec2f17f97a"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Notch/NotchSystemUI.swift",
+      "blob": "828dd2a1adacbbbe1f304f3ea800a9644adcd2b6"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Notch/OutputSoundProbe.swift",
+      "blob": "3df798001ac3a45e663cec321d0765ca3affea02"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Orchestrator/CaptionWords.swift",
+      "blob": "eaa2c15effaa8dbb98701d281a54b60731616af0"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Orchestrator/LineNarrator.swift",
+      "blob": "201d6e4a2796f3ae616088aaf492fc6e48f07d10"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Orchestrator/NarrationPacer.swift",
+      "blob": "130a6b48366bca2a1c3f492dd4099e97dd52f287"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Orchestrator/TalkKeyGestures.swift",
+      "blob": "fa879e546c6705bc9a0bfff4d44cdefde18c2c73"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Orchestrator/TurnGuidance.swift",
+      "blob": "526c08acf1655042e92e651d7740fc6e1062e097"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Orchestrator/TurnOrchestrator.swift",
+      "blob": "b48b615d711eb97d9de1542a35c6e6fd7d086fe3"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Orchestrator/TurnSeams.swift",
+      "blob": "7ccf47ffaa747a0c56f4b7c57c5e90aabac86680"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Orchestrator/TurnSimulation.swift",
+      "blob": "dd5c6f3b6f55a5363f3a505a1e3b7fee97b56d3e"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Orchestrator/TurnTypes.swift",
+      "blob": "478ba023b541b4750f3c3b16e4031452e18201d3"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Orchestrator/VoiceLoopSettings.swift",
+      "blob": "485d5f4b4730262e79ac5a87a78af69b1da542b0"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Pointing/AccessibilityElementReader.swift",
+      "blob": "dac0ea595abbd3c80e7377db5e31f5f8d9c16cc9"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Pointing/BuddyPointerArtist.swift",
+      "blob": "016df7e61da5e41c059d366bf48d21a6e15c1777"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Pointing/CaptureGeometry.swift",
+      "blob": "24d636f44bf6bf9eb37df59d20b2976119152b85"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Pointing/ElementGrounding.swift",
+      "blob": "6d4e4b5f153cf783259b76b2ff0d39e8fc585da4"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Pointing/ElementMatching.swift",
+      "blob": "1fe04cb5c065dc0d250750fe38bc106d8a96f842"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Pointing/ElementSnapshot.swift",
+      "blob": "e0e185b3273a103954460eb27f5092502dde8a29"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Pointing/PointerFlight.swift",
+      "blob": "bd7cc1caf715f932326ccdf14d2957ad38dd85c9"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Previews/DelimitedText.swift",
+      "blob": "16c2eacd5e980cf05deb528b98fdee01d5a697f3"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Previews/FilePreviewKind.swift",
+      "blob": "01c71d2f940fce035f2df597fcdfd77188a6c80f"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Previews/MarkdownBlocks.swift",
+      "blob": "64edf71aff641e9c4c997a3285ed0aeb004f250d"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Previews/PreviewText.swift",
+      "blob": "878c1cbfa29de22e6e25aa1722646dda50d5ebea"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/Anthropic/AnthropicComputerUse.swift",
+      "blob": "de891f5094e8b7f5f5eec89abfbe3baaebf32ef5"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/Anthropic/AnthropicMessagesClient.swift",
+      "blob": "ec5d8b002daa44e3c7cbdbdd3b9bfb228ce0baf9"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/Anthropic/AnthropicStreamDecoder.swift",
+      "blob": "c8ab4be649231bc4cf398d5e3494e47ef09f0ba0"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/Anthropic/AnthropicThinkingReplay.swift",
+      "blob": "d2d8a0f4e1709d2200839db1d4e8bdabf7fc2c7f"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/AppleSpeech/AppleSpeechAnalyzerBackend.swift",
+      "blob": "a03c7311dcb02f5cc4ad0f0db6a336f1927ba218"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/AppleSpeech/AppleSpeechAudio.swift",
+      "blob": "769aeecdd2b67ebfeed3ff5d0611842cef404200"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/AppleSpeech/AppleSpeechClient.swift",
+      "blob": "e8207692313b45f70d20411362218aabab0c2d0b"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/AppleSpeech/AppleSpeechRecognizerBackend.swift",
+      "blob": "a0fa2b9fba259e583ba5242d199c73f9a6ec863b"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/AppleSpeech/AppleSpeechSession.swift",
+      "blob": "3693ecefd8a468b043ce5da80ab1e4f0fbe61cbb"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/AppleSpeechSynthesis/AppleSpeechSynthesisClient.swift",
+      "blob": "d8be0a10cfea9ee7ea9892a0252495826bb35b52"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/AppleSpeechSynthesis/AppleSpeechSynthesisPCM.swift",
+      "blob": "5c691c7835c0fef7ea4423ce5df2fdfb0de4f42f"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/AppleSpeechSynthesis/AppleSpeechSynthesisRenderer.swift",
+      "blob": "758564aacad5c8734fc3127362e719a4df56e2a0"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/Deepgram/DeepgramListenClient.swift",
+      "blob": "9b6304d230a24c2b7369bc2e6482dba679e5b693"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/Deepgram/DeepgramListenSession.swift",
+      "blob": "0c9e136e12ebc67a58b9b0d943c20284a5a3f0e3"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/Deepgram/DeepgramTranscriptMapper.swift",
+      "blob": "2665202c2bc1cc483da4acecd1f432470ac6a5bb"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/ElevenLabs/ElevenLabsSpeechClient.swift",
+      "blob": "66e5ced3ab29cac7041e01abef96d42c8074260e"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/Gemini/GeminiLiveSession.swift",
+      "blob": "a2a5113ebafde6889822d91e87fe8dc3a0497c98"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/Gemini/GeminiLiveSpeechToTextClient.swift",
+      "blob": "6bbd0a0c1552c39bbf35c57503d6c23754568593"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/Gemini/GeminiLiveTranscriptMapper.swift",
+      "blob": "002afd17462220bdb23ad576d88c9d41a024d55d"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/Gemini/GeminiLiveWire.swift",
+      "blob": "f8a78ac7a812a8a16d52e08de64d340b6972c51e"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/Gemini/GeminiSpeechClient.swift",
+      "blob": "6e48f180c64925531bc4ffc886a8b098e2208c19"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/Gemini/GeminiSpeechWire.swift",
+      "blob": "8b35d6b794d256dc39001abf56d9c01a11345e38"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/Gemini/GeminiTranscriptionClient.swift",
+      "blob": "d0ea04a6203c9950490e983f1a64cd9c36d5a7aa"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/OpenAIChat/OpenAIChatClient.swift",
+      "blob": "5c281a0da708002783165638c2c51743b02cf18b"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/OpenAIChat/OpenAIChatRequestEncoder.swift",
+      "blob": "b6fe7d30dd8b6ddb558237cb36544bcb69afefe9"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/OpenAIChat/OpenAIChatStreamDecoder.swift",
+      "blob": "b09cee02dd164d4cdc36ea06f6d2e24f0b023e01"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/OpenAIRealtime/OpenAIRealtimeSpeechClient.swift",
+      "blob": "d7eac5f2a080187d358216ee5ba45812b8a250ad"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/OpenAIRealtime/OpenAIRealtimeWire.swift",
+      "blob": "cb681ee7e374c5080771266838cb6917e9373833"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/OpenAIResponses/OpenAIResponsesClient.swift",
+      "blob": "894907668689c1dd419bdda3dff0ee5abac62dfa"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/OpenAIResponses/OpenAIResponsesEventDecoder.swift",
+      "blob": "0f60152366a9d67749c6c93a183b7c3e7dbf7881"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/OpenAIResponses/OpenAIResponsesRequestEncoder.swift",
+      "blob": "dc4c3751a5de813f5b2a72bbd3c526a52dbc116e"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/OpenAISpeech/OpenAISpeechClient.swift",
+      "blob": "41dc09d614482a8e1b03b45d6ac5d2be3dcca59b"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/OpenAITranscription/OpenAITranscriptionClient.swift",
+      "blob": "e0445dfc3ede8cf5924ae605f4a087d4ba3f8980"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/OpenAITranscription/OpenAITranscriptionForm.swift",
+      "blob": "20040a74c557a102ffa58eb40b0e73403b79c888"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/OpenAITranscription/OpenAITranscriptionSession.swift",
+      "blob": "05976cef27788a74a1f6ac4570dfe08df786d230"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/ProviderDialect.swift",
+      "blob": "a061c84da8efde73ed58f2752d4c1f0ffb9a43b9"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Providers/ProviderPresets.swift",
+      "blob": "0ed6efd7c481c0170b8e8d7e0129f6bc52d78296"
+    },
+    {
+      "path": "Sources/OpenClickyKit/RealtimeVoice/AlwaysOnRecorder.swift",
+      "blob": "5b9e2895ae256ebb34eceed48c6aa30b53263c7a"
+    },
+    {
+      "path": "Sources/OpenClickyKit/RealtimeVoice/AlwaysOnVoice.swift",
+      "blob": "44aa607f0bcff2ce1e33c981523bd74df03456dd"
+    },
+    {
+      "path": "Sources/OpenClickyKit/RealtimeVoice/AlwaysOnVoiceLoop.swift",
+      "blob": "2e91c2fbe7b1cab9cb87d86ddeaab500c9d1b646"
+    },
+    {
+      "path": "Sources/OpenClickyKit/RealtimeVoice/EchoGateTuner.swift",
+      "blob": "756d5b80e66346d2c1746388e64b86dd32e20a48"
+    },
+    {
+      "path": "Sources/OpenClickyKit/RealtimeVoice/GeminiLiveVoiceClient.swift",
+      "blob": "5db0c722617c7c0f0ebd2fabe390205965a7e73e"
+    },
+    {
+      "path": "Sources/OpenClickyKit/RealtimeVoice/GeminiLiveVoiceWire.swift",
+      "blob": "a1f5f49737f1a0bc6216073d03f8e7b30f1c2bf8"
+    },
+    {
+      "path": "Sources/OpenClickyKit/RealtimeVoice/OpenAIRealtimeVoiceClient.swift",
+      "blob": "e601eda98d46bf26b7a662ba22fb409434483d15"
+    },
+    {
+      "path": "Sources/OpenClickyKit/RealtimeVoice/OpenAIRealtimeVoiceWire.swift",
+      "blob": "16267972c0235b24a4534f8a2923ac4286735bae"
+    },
+    {
+      "path": "Sources/OpenClickyKit/RealtimeVoice/RealtimeAudioOutput.swift",
+      "blob": "06b0724cbf1721d88a5e0273559d65318553c67c"
+    },
+    {
+      "path": "Sources/OpenClickyKit/RealtimeVoice/RealtimeConversation.swift",
+      "blob": "c62ed27d19acaac722c0278ad5f00779b7d94dee"
+    },
+    {
+      "path": "Sources/OpenClickyKit/RealtimeVoice/RealtimeEchoGate.swift",
+      "blob": "0dc5d2cacb8d726303ee8d4a263e5eb6d39e0c2e"
+    },
+    {
+      "path": "Sources/OpenClickyKit/RealtimeVoice/RealtimeInstructions.swift",
+      "blob": "eb03a6070504da284eb17e09ef8ddfe4654bbe71"
+    },
+    {
+      "path": "Sources/OpenClickyKit/RealtimeVoice/RealtimeSocketPump.swift",
+      "blob": "0f6594ff8f6840df2ecb91ad9b2944d42dda3296"
+    },
+    {
+      "path": "Sources/OpenClickyKit/RealtimeVoice/RealtimeToolDispatcher.swift",
+      "blob": "d5599859890641e34c62eb4a6607b254402b33ab"
+    },
+    {
+      "path": "Sources/OpenClickyKit/RealtimeVoice/RealtimeTools.swift",
+      "blob": "4618db2d5b431f932dbf9f762cbd278c3865b24a"
+    },
+    {
+      "path": "Sources/OpenClickyKit/RealtimeVoice/RealtimeVoiceFakes.swift",
+      "blob": "335f4f1c001024927e3b4dd8766f384b62fcd810"
+    },
+    {
+      "path": "Sources/OpenClickyKit/RealtimeVoice/RealtimeVoiceSession.swift",
+      "blob": "dadd33e6f7e4c729fbc8a4fec95f218e14ca04a9"
+    },
+    {
+      "path": "Sources/OpenClickyKit/RealtimeVoice/VisionAnswerBrain.swift",
+      "blob": "2ddf882278fe7d3397fefd6373c076988287718d"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/fonts/Barlow-Medium.ttf",
+      "blob": "d546e7a376da63b119bfbf67bc3e8bdee0172316"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/fonts/Barlow-OFL.txt",
+      "blob": "2f22ba6ca4dbc12145ae40b14c3368f387cba0e2"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/fonts/Barlow-Regular.ttf",
+      "blob": "bb3faec4e243e812b288fbfb9235b12ea781eee4"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/fonts/Barlow-SemiBold.ttf",
+      "blob": "7c974a4aa67c689a4b2a844b48f624cb4eeaa6bd"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/fonts/PatrickHand-OFL.txt",
+      "blob": "4d5f9447f48357b6a4ac294604954b274059d119"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/fonts/PatrickHand-Regular.ttf",
+      "blob": "fb45ccdbd344ab7f9f4ae98792521405e48cda3e"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/js/.gitkeep",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/js/draw-engine.js",
+      "blob": "23f3113610849be26c585d5c85cd58cc259f686d"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/js/draw-extras.js",
+      "blob": "7609b58fefb8816e4062a6651e814c863004031f"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/js/draw-pieces.js",
+      "blob": "c5c61b969fa02dce2586617e7314862628bdfc60"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/js/figure-api.js",
+      "blob": "cc17828ad8abdda5d2471f4e71560c9ee2834cf8"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/js/guided-api.js",
+      "blob": "3008b46f4816ff1098a0649ca5116d011f864583"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/js/media-api.js",
+      "blob": "8c86ba033bc7c8854a5fa78db85968a26e0ba5f9"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/js/three-LICENSE.txt",
+      "blob": "8ada2a5f982916b0ba4b7a0aa7de347587e745d7"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/js/three-kernel.js",
+      "blob": "039b27e4391ee753312d699f4dbeb2faf5e1d096"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/js/three-slice.js",
+      "blob": "c3ccd8ec2779558c4162623ec367d752bd170b80"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/metal/.gitkeep",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/metal/figure-common.metal",
+      "blob": "234e326e35c0e819e26731c85cf6b9b0ef2c81c4"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/metal/figure-environment.metal",
+      "blob": "6b612c8d1f877644e74b98e0c2fd8e2bc7eb9c57"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/metal/figure-illustrated.metal",
+      "blob": "935b10750becb4a5fc505cbafff6899c3c0a3f2b"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/metal/figure-studio.metal",
+      "blob": "91449ff762edcf74e55c04e31f6edae79494a6bb"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/model-catalog.json",
+      "blob": "c506df01e75993b3c21a0f65595ac2e4c6c36eb0"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/prompts/draw-2d.md",
+      "blob": "0ce4b413f712c05ba5144047df4faca58c3cd1d9"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/prompts/draw-3d.md",
+      "blob": "0bc07d7b540dcfafde290dd811bd0c615fe8961e"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/prompts/draw-guided.md",
+      "blob": "195783a1c3b54b2108efeb0f244842147b775393"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/prompts/draw-media.md",
+      "blob": "02df436164be44c77111eba2a97884734c4d92f5"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/agent/openclicky-browser/SKILL.md",
+      "blob": "0271770a0a4e8e219a2167a2d4efe06632db36d9"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/agent/openclicky-browser/references/batching.md",
+      "blob": "88d43cfc9a183882d123bedf0eb664a76ef44a8c"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/agent/openclicky-browser/references/confirmations.md",
+      "blob": "adfdb238153bcb8c6ff4784554297bf3863d851f"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/agent/openclicky-browser/references/files.md",
+      "blob": "8d771a4d21419c4936ab10c391c750cc994de213"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/agent/openclicky-browser/references/reading-and-acting.md",
+      "blob": "b83993f8fb08386a81334820e4656026a95130ea"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/agent/openclicky-browser/references/safety.md",
+      "blob": "fac0dbefeaf623d92bb0a7440c9149f920a80386"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/agent/openclicky-browser/references/tabs.md",
+      "blob": "d303c4fad7ecbcc74381a2d03cdfcc7278207d56"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/agent/openclicky-browser/references/troubleshooting.md",
+      "blob": "45c739b9548725f70a2c5349d5df8835151da508"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/agent/vercel-deploy/ATTRIBUTION.md",
+      "blob": "c368b3cce096b684e388e08d77015929f0f2c6dd"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/agent/vercel-deploy/LICENSE.txt",
+      "blob": "94df5bf89dbb6210a707fb4edbf3aade96bc4318"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/agent/vercel-deploy/SKILL.md",
+      "blob": "a7e6faf3b999d31e8224e232d39fbf58952b7a5b"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/agent/vercel-deploy/agents/openai.yaml",
+      "blob": "f11e4eeb297dac79d03c35b227830b611f6e6ad2"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/agent/vercel-deploy/assets/vercel-small.svg",
+      "blob": "96df051b9b6ac2905a86f43b95fb9ff68d2d8b04"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/agent/vercel-deploy/assets/vercel.png",
+      "blob": "c41ae1e890a2f85c50ae6e976ed00e8374b0e87e"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/agent/vercel-deploy/scripts/deploy.sh",
+      "blob": "db8eb5a8639d48777af3a27a9c0bba3421e2cf9a"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/catalog/budget-check/SKILL.md",
+      "blob": "bb44e1f3917d3a8b21de77ce802f49bc34fe5d5b"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/catalog/code-review/SKILL.md",
+      "blob": "772d6a4a25d810523ed1f247789f187e9fa0de74"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/catalog/meeting-notes/SKILL.md",
+      "blob": "a0cb044cd5b9ce13c6c68dba6251a46aaaf2e48d"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/catalog/research-brief/SKILL.md",
+      "blob": "172151a3e390eed91002aa683cf8fa3c46778386"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/catalog/slide-decks/SKILL.md",
+      "blob": "5f237ec31df8adb8b58ab8951f1f4c97f8c9ad91"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/catalog/study-buddy/SKILL.md",
+      "blob": "4ade25b269e09aa6c721500a83f8653fc84db08b"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/catalog/trip-planner/SKILL.md",
+      "blob": "6885276efe32d99624b7ab785aa93e317c9287f0"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/catalog/writing-coach/SKILL.md",
+      "blob": "9a5e9251472bd3009b2014e681446fa4ccddb220"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/integrations/clickup/SKILL.md",
+      "blob": "713dd8289725b24a93f87a78dc102ad7bb0e29c0"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/integrations/dropbox/SKILL.md",
+      "blob": "6c2b5cc62617f73e553fef86da825cedcea604f8"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/integrations/github/SKILL.md",
+      "blob": "8ffaa5724689ef052789bf3d249321c0156e10f1"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/integrations/gmail/SKILL.md",
+      "blob": "83e4a881559706c96080fa0fd93172ec2a972183"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/integrations/google-docs/SKILL.md",
+      "blob": "00359c8985300bcbca1bbd6d3b689cf32e2efef3"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/integrations/google-tasks/SKILL.md",
+      "blob": "1ad6120807a2c7fb001154837b29ae3925c04eaa"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/integrations/hubspot/SKILL.md",
+      "blob": "fb29592df698e7437ecf74b81b020700e6d5e816"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/integrations/jira/SKILL.md",
+      "blob": "269f06d0c539adbec8b9e86393f704e634cea2a1"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/integrations/linear/SKILL.md",
+      "blob": "8d8912039493b7a3a4e79872e4b57b4a528356d8"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/integrations/microsoft-teams/SKILL.md",
+      "blob": "9dfd85061d545c34f071d2ea766896099f208581"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/integrations/notion/SKILL.md",
+      "blob": "dfde43a831ad9f083fde5c60754cfcfee517bfcb"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/integrations/outlook/SKILL.md",
+      "blob": "ae4db2d6bd05afa24357b63f12a8af86a0138e2d"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Resources/skills/integrations/salesforce/SKILL.md",
+      "blob": "cb553ae7ec43bdd8ec2df34e60d7a7d6f5b9dbe8"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Screen/CaptureSizing.swift",
+      "blob": "325f1da0d39a3038406ec3fa0a8d1da34e2aa3bd"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Screen/DisplayGeometry.swift",
+      "blob": "c6f06a5e97d17b3b02fc390ebed3c59f04ebe692"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Screen/ImageCoding.swift",
+      "blob": "711eb555ed3aad3b5fe16dcfdcab56073f18eb85"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Screen/OwnWindowCapturePolicy.swift",
+      "blob": "0ae4ddaf1e6bb7fc047f8365606920ac15485d2d"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Screen/ScreenCapture.swift",
+      "blob": "0cf7e70660ffa361e30ac0656bf7911a2aafe0f9"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Screen/ScreenCaptureService.swift",
+      "blob": "94e04e8db5d79795445ca9ab4b402f816c05f832"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Screen/ScreenSettle.swift",
+      "blob": "352988a1b7ebeb69777b0b9c239200b82ec8944a"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Settings/AgentPreferences.swift",
+      "blob": "5cceca4b82db32fc588982c6f84f7c1e48ec9ec3"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Settings/AppBehavior.swift",
+      "blob": "03c5f5e56304849903ad9493f57a5a58e2ed0db1"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Settings/BrowserSetup.swift",
+      "blob": "52b036ce432f9aaf26a875c369cf602aa08a0d8e"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Settings/DictationPageSupport.swift",
+      "blob": "94db508bbf1ba741229f7f92f8bb7bd6c57732e5"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Settings/LocalDataReset.swift",
+      "blob": "daa29cb09557ef0893516f41e2b6350f42cefad7"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Settings/MicrophoneSettings.swift",
+      "blob": "da764e02ccca6a466faf4114d859852bbd5d82cc"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Settings/OpenClickyURLRouter.swift",
+      "blob": "34e9ff66bd14faaa02978130afd08f25d4dc5371"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Shell/AutomationAccess.swift",
+      "blob": "136845bb82e3e1a3534c26a718e33b5d64e9e85a"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Shell/OnboardingFlow.swift",
+      "blob": "3596d8e849a648e0f5eb55e671d508a0d2b2acba"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Shell/OnboardingInterview.swift",
+      "blob": "f9d6db0b9207d8481186b10d93e0817183a75d45"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Shell/PermissionStates.swift",
+      "blob": "2b169a027e6d4671185ba179e4f433b028919896"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Shell/TalkKeys.swift",
+      "blob": "bc9458756be3f664d54cede7e2b6d03586a9685f"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Shell/TypedChat.swift",
+      "blob": "7ad21bdfb527acbc0c996f24194debc440322845"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Shell/VoicePreviews.swift",
+      "blob": "3ccf2019088e82d19e1cc1c807f14f83c55c7ac2"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Skills/AgentSkillInstaller.swift",
+      "blob": "e19f6dbbd08456eddd62a34e1376443826679864"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Skills/AgentSkills.swift",
+      "blob": "8f714e8e18aaaa2e1bf465dc652c93939831f88a"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Skills/SkillCatalog.swift",
+      "blob": "bc5552c23980f7b16383693b311d5dccd77314dd"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Skills/SkillCreation.swift",
+      "blob": "1b39340d9858c55f32bd01ecc80bcb3b30bd3bd4"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Skills/SkillFile.swift",
+      "blob": "097317a719f4be1811860171f5a42c5046c8968f"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Skills/SkillMetadata.swift",
+      "blob": "664e76d0b5917b40dcbd54dd9a9fb4bc4b5ff2d8"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Skills/SkillPicker.swift",
+      "blob": "0e05510ab59ee9c72619f983a28a876ff09f8176"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Skills/SkillsLibrary.swift",
+      "blob": "a40e4d44ef2ecc388fd4e6c1c7641fceefc753ef"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Skills/SkillsPrompt.swift",
+      "blob": "ceef10f43dbe9bf4ae51b31d9310955358cdb845"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Takeover/DriveAction.swift",
+      "blob": "eb5d50ae02ecb3c097183178491856086dd9bfd3"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Takeover/DriveActuator.swift",
+      "blob": "997387f8d53543ceb776ce3bc91cb9383587baaf"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Takeover/DriveObservation.swift",
+      "blob": "6cb83e769dde9eeac09b400b56b5975a7c46c189"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Takeover/DriveSafety.swift",
+      "blob": "ca3473f09d2f00b0a9067d63aa28da47ba34688a"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Takeover/MacTakeoverProbe.swift",
+      "blob": "45fed65e76304c407c4f6553b8af9f975d889b72"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Takeover/TakeoverConsent.swift",
+      "blob": "34910eb97f38a15fc84fcb2e937d1e20c3130fe2"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Takeover/TakeoverController.swift",
+      "blob": "40f8ad50ae940b233d5f0b870afc5e6f2ae4e99d"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Takeover/TakeoverDriver.swift",
+      "blob": "bd7c9bebb3279890dd28233040d03af68163cf80"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Takeover/TakeoverPlanner.swift",
+      "blob": "4396e9964fbace02d059c4e16bcd69523bf1dcc5"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Takeover/TakeoverPlanners.swift",
+      "blob": "e60836ceef88d063c348af2316f87c3922031f0b"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Takeover/TakeoverPrompts.swift",
+      "blob": "6c9e7fcdac2cb953d29f88382108ec222b2847e8"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Takeover/TakeoverReport.swift",
+      "blob": "4b83f0beefd5c9c595bc2c03ef2607e6a532f5b3"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Takeover/TakeoverScreen.swift",
+      "blob": "ddebf913096d56d5be0325b9f54343a0f360fb3b"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Takeover/TakeoverStop.swift",
+      "blob": "d5bd28071ffb36dee2908715d90a1283c8f36895"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Takeover/TakeoverTools.swift",
+      "blob": "c71371a46dd62c5e1ea50a04343ac5f16edcd922"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Transport/Fakes.swift",
+      "blob": "a52f46bbab04d77307bef9b2d9ee0cd8764adc89"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Transport/HTTPTransport.swift",
+      "blob": "7c083263b3aba160855fce713eb807ba350c0a36"
+    },
+    {
+      "path": "Sources/OpenClickyKit/Transport/WebSocketTransport.swift",
+      "blob": "3399d239f228cc944541fbc141ea62c733fa804a"
+    },
+    {
+      "path": "Sources/occtl/BrowserWriteApproval.swift",
+      "blob": "d3450bcef64b21d444aeee3943c8f88442649b0b"
+    },
+    {
+      "path": "Sources/occtl/Commands/AgentCommands.swift",
+      "blob": "04abbbb1844336b6c07dd5b040c4dae64c9fbbe9"
+    },
+    {
+      "path": "Sources/occtl/Commands/AgentReportCommands.swift",
+      "blob": "b9ffff9bb04f7905779bd62adfcf261385e2c098"
+    },
+    {
+      "path": "Sources/occtl/Commands/AgentUXCommands.swift",
+      "blob": "4784ff5b05efc0c448816c31ec9d048bee80dd56"
+    },
+    {
+      "path": "Sources/occtl/Commands/AppsCommands.swift",
+      "blob": "2feee11bf251875a7db0e10aed9db66855ad7733"
+    },
+    {
+      "path": "Sources/occtl/Commands/AudioCommands.swift",
+      "blob": "c9b8ff623554dc0a4bc2a2d080f15a9f33ef07b7"
+    },
+    {
+      "path": "Sources/occtl/Commands/BrainCommands.swift",
+      "blob": "2c508043a6119b5c82513d547a4d5d3f127ad457"
+    },
+    {
+      "path": "Sources/occtl/Commands/BrowserCommands.swift",
+      "blob": "1c70cf7b0914ce6688ff1117e9290f149ae7dd05"
+    },
+    {
+      "path": "Sources/occtl/Commands/ChatCommands.swift",
+      "blob": "a76d81e21e51c5efd3b4b671b3be6680e57fdf18"
+    },
+    {
+      "path": "Sources/occtl/Commands/CoreCommands.swift",
+      "blob": "2dfd754f197f164d6791e2b08722e3e1259f3fe1"
+    },
+    {
+      "path": "Sources/occtl/Commands/DictationCommands.swift",
+      "blob": "a50277002ffc7410308c7588984e19336dee8e53"
+    },
+    {
+      "path": "Sources/occtl/Commands/DictationRunCommand.swift",
+      "blob": "f3a67cb6c30a7f3fd566d420479475e52704f529"
+    },
+    {
+      "path": "Sources/occtl/Commands/DrawCommands.swift",
+      "blob": "aca0a225c739552d2e31566e99c5f43fb1a21240"
+    },
+    {
+      "path": "Sources/occtl/Commands/EngineCommands.swift",
+      "blob": "267343d060e5903d0f14d4f8622d46f6cccf7901"
+    },
+    {
+      "path": "Sources/occtl/Commands/FigureCommands.swift",
+      "blob": "6e83ad89965287d6546ea5b4644246f1477dd1a6"
+    },
+    {
+      "path": "Sources/occtl/Commands/GroundCommands.swift",
+      "blob": "88bbfe59f4f433043c2b106172952b3733c7ec93"
+    },
+    {
+      "path": "Sources/occtl/Commands/GuidedCommands.swift",
+      "blob": "af55d4f5b4637ad0d23e6f8e9568a2f304156591"
+    },
+    {
+      "path": "Sources/occtl/Commands/HistoryCommands.swift",
+      "blob": "d170936177f1d2d6993ed4e5fb440bc870ab690b"
+    },
+    {
+      "path": "Sources/occtl/Commands/InfraCommands.swift",
+      "blob": "2f45315759c3cb22a4a3e0123c593ce821b9ee68"
+    },
+    {
+      "path": "Sources/occtl/Commands/LatencyCommands.swift",
+      "blob": "0d622145a128cbe5a6d035962a89052808c10dda"
+    },
+    {
+      "path": "Sources/occtl/Commands/LookupCommands.swift",
+      "blob": "9c65beab523089053408eb159e601cd9b838fcc6"
+    },
+    {
+      "path": "Sources/occtl/Commands/MemoryCommand.swift",
+      "blob": "8a132c01f0dbe7f05729bc22b2431a57d855b41c"
+    },
+    {
+      "path": "Sources/occtl/Commands/NotchCommands.swift",
+      "blob": "92c307e2894206c1b79d573f1759c32a35d0d49d"
+    },
+    {
+      "path": "Sources/occtl/Commands/OnboardingCommands.swift",
+      "blob": "ba4e3c442fbd32b4c7cf0e5dd22613e8c5b4e3e2"
+    },
+    {
+      "path": "Sources/occtl/Commands/OverlayCommands.swift",
+      "blob": "91633f46a8353c2b23f302b148fb9cd03fab5a1e"
+    },
+    {
+      "path": "Sources/occtl/Commands/QuietCommands.swift",
+      "blob": "b486fb89f9b4b16e2603cfcf8a46aea022317da0"
+    },
+    {
+      "path": "Sources/occtl/Commands/RealtimeCommands.swift",
+      "blob": "40fce909f01639829749846f028225c5cc2ade0a"
+    },
+    {
+      "path": "Sources/occtl/Commands/RealtimeInterviewCommand.swift",
+      "blob": "58777e1dfa9741e0ada87d8a181884bb3103e86c"
+    },
+    {
+      "path": "Sources/occtl/Commands/RealtimeScenarioCommand.swift",
+      "blob": "a7d251bcc097e23bf0617ef083b5ef47b0acaeed"
+    },
+    {
+      "path": "Sources/occtl/Commands/RoutinesCommands.swift",
+      "blob": "42196bf50cec372fbc8b53a1dd72762e3d7ab5d7"
+    },
+    {
+      "path": "Sources/occtl/Commands/ScreenCommands.swift",
+      "blob": "7aeb3810fd63c254023b2dff7e09163ad345174e"
+    },
+    {
+      "path": "Sources/occtl/Commands/SkillsCommands.swift",
+      "blob": "8bd82f3ad45fdbe059d0d7a74e114eb2f8717a81"
+    },
+    {
+      "path": "Sources/occtl/Commands/SoundcheckCommands.swift",
+      "blob": "0d211fe3fc4bae09949be38d87f0d4da6ee13dee"
+    },
+    {
+      "path": "Sources/occtl/Commands/TakeoverCommands.swift",
+      "blob": "540b7defdb885165a9fec1b995fa37d9b0de9bfd"
+    },
+    {
+      "path": "Sources/occtl/Commands/ToolsCommands.swift",
+      "blob": "eb62966fca8220d2ba20cde4d579f71eb5ae5ab4"
+    },
+    {
+      "path": "Sources/occtl/Commands/TranscribeCommands.swift",
+      "blob": "82c081be6269e5ce1756f133133e2336a441a35d"
+    },
+    {
+      "path": "Sources/occtl/Commands/TurnCommands.swift",
+      "blob": "18484733265c433c7717fa66992767431e6fc25b"
+    },
+    {
+      "path": "Sources/occtl/Commands/URLCommands.swift",
+      "blob": "0e987eda5d156fa33a570ab35e64a2a543172f11"
+    },
+    {
+      "path": "Sources/occtl/Commands/VoicesCommands.swift",
+      "blob": "6a187b3e66b9fdd4f3e36ece85f1455ec933f96e"
+    },
+    {
+      "path": "Sources/occtl/main.swift",
+      "blob": "3389b0695e826203a785fdb13cc9bb65d552c46f"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "blob": "ac0f9a2136ff5ef5a8f168112adc3e5250d20a40"
+    },
+    {
+      "path": "Tests/Fixtures/Drawing/2d/1-pointing.js",
+      "blob": "d818ded15ad7dd7346d81fdb0f6d2d494224d870"
+    },
+    {
+      "path": "Tests/Fixtures/Drawing/2d/2-paper-diagram.js",
+      "blob": "1f606f880b346ea31e636854cf94305b2abc4996"
+    },
+    {
+      "path": "Tests/Fixtures/Drawing/2d/3-graph-timeline.js",
+      "blob": "8bd7aa4fd071640f78b6f17333f906be9c00e961"
+    },
+    {
+      "path": "Tests/Fixtures/Drawing/2d/4-dark-edits.js",
+      "blob": "f8416b34da84a1bacc2335a419526ccde822caa7"
+    },
+    {
+      "path": "Tests/Fixtures/Drawing/2d/5-split-ink.js",
+      "blob": "f8d8f69b4ed4da6555bc908d15423d867700d157"
+    },
+    {
+      "path": "Tests/Fixtures/Drawing/2d/6-strange-numbers.js",
+      "blob": "db7a5440927e19d824de514f2dd3657becef9321"
+    },
+    {
+      "path": "Tests/Fixtures/Drawing/3d/gear-train.js",
+      "blob": "3e4105de36998eef7d0b7285349fb29a091e9b91"
+    },
+    {
+      "path": "Tests/Fixtures/Drawing/3d/gyroscope.js",
+      "blob": "85a27213f75b49ca513d35bb5f0906d259fe4736"
+    },
+    {
+      "path": "Tests/Fixtures/Drawing/3d/molecule.js",
+      "blob": "d45deb2d39b58f94a4ac4b10b9735fa89a4f1894"
+    },
+    {
+      "path": "Tests/Fixtures/Drawing/3d/piston-engine.js",
+      "blob": "5fb10b20a74903e019bebd2981ed257221e0cb98"
+    },
+    {
+      "path": "Tests/Fixtures/Drawing/brain/1-bridge-page-first-try.js",
+      "blob": "638ebdad802acb4e1169c603b06e9f84b1f81bef"
+    },
+    {
+      "path": "Tests/Fixtures/Drawing/brain/1-bridge-page.js",
+      "blob": "705d88603fa30cd7359087cd8fc430408038df70"
+    },
+    {
+      "path": "Tests/Fixtures/Drawing/brain/2-hash-table.js",
+      "blob": "bda771fb80d410fc8b16b325d9814618f8027d82"
+    },
+    {
+      "path": "Tests/Fixtures/Drawing/brain/3-hash-collisions.js",
+      "blob": "7aa810343210cb275f60c910d4cc03cee9b25899"
+    },
+    {
+      "path": "Tests/Fixtures/Drawing/brain/5-gyroscope-3d.js",
+      "blob": "a996fb167468ab2f7330012fbb37d18f69312e43"
+    },
+    {
+      "path": "Tests/Fixtures/Drawing/brain/6-growth-graph.js",
+      "blob": "ead6cd515557c89bf59fa5ffd24467b08200fc7d"
+    },
+    {
+      "path": "Tests/Fixtures/Drawing/brain/inputs/blank-canvas.png",
+      "blob": "bb8176d7239a9c6629ea745e6cdf403d59fef764"
+    },
+    {
+      "path": "Tests/Fixtures/Drawing/brain/inputs/bridge-page-elements.json",
+      "blob": "e4d525f3f16b0014dcf4175aad5f3a551c14ec60"
+    },
+    {
+      "path": "Tests/Fixtures/Drawing/brain/inputs/bridge-page.jpg",
+      "blob": "d0aad41ce7912de66506f4a322a84eff941772d3"
+    },
+    {
+      "path": "Tests/Fixtures/Drawing/voice/1-voice-bridge-page/program.js",
+      "blob": "5f2887d3f4c96ae30b72c95091c3fc7970374904"
+    },
+    {
+      "path": "Tests/Fixtures/Drawing/voice/2-voice-diagram-blank-canvas/program.js",
+      "blob": "7a9ffa264e9a6a10e5d5b81081e88d1c450c79eb"
+    },
+    {
+      "path": "Tests/Fixtures/Drawing/voice/3-typed-read-aloud/program.js",
+      "blob": "14cfb9fabc315bfcfebe3ca3e308bea47e0bafed"
+    },
+    {
+      "path": "Tests/Fixtures/Drawing/voice/integration/2-draw-to-ask-bridge-page/program.js",
+      "blob": "17895149d57175f41d139b41a88567088328af67"
+    },
+    {
+      "path": "Tests/Fixtures/Drawing/voice/review/R1-voice-password-field/program.js",
+      "blob": "dbeea6de47eacf7bf24c402f216740ed16c8b277"
+    },
+    {
+      "path": "Tests/Fixtures/README.md",
+      "blob": "cbaa615830b85ff79c5630d26e28af49f35d9d70"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AgentChromeSetupTests.swift",
+      "blob": "d032ffc315d0acb30d5aced7d89a93f4a8667f48"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AgentClickysTests.swift",
+      "blob": "657282ab60fca78f7b2f4cf88d0092a25578fca8"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AgentConfigTests.swift",
+      "blob": "5734a104ae3b7e94ac580cc6df68249c717f9a2c"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AgentConnectedAppsLaunchTests.swift",
+      "blob": "7d71e2b863cffbbd0149b04b74e2b6475eb7f8e1"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AgentCoordinatorTests.swift",
+      "blob": "aeb079cfa1f7734e2ed850510a215475d1a8049c"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AgentCoreManagerTests.swift",
+      "blob": "bb3e5f81bb25aa2ad5c361b0662d53ede2f34695"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AgentFileDiffsTests.swift",
+      "blob": "112e9c42083804caa4b41cdd9fe37c53c3e62e85"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AgentFinalBlocksTests.swift",
+      "blob": "812415f148ca50fc0bb2d186144d201b099babce"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AgentFixtures.swift",
+      "blob": "efdf2d80f2eff99115c40c89af436aedc4e386e7"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AgentHarnessTests.swift",
+      "blob": "8350e6f49af93c25af867aa0c2e0dd9fe18c1024"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AgentJobToolsTests.swift",
+      "blob": "3b9b770512c9a2d0673c3d268f700aa901b78ae4"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AgentLimitsTests.swift",
+      "blob": "325815f76aa3363e9a1c90996545e546c671a403"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AgentManagerTests.swift",
+      "blob": "8d56bdf0f77359c45d2aa51af094219bce826779"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AgentNormalizerTests.swift",
+      "blob": "8c2db628cf540b66b2f338058dc67bbc4ddd2290"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AgentOrganizerTests.swift",
+      "blob": "e4cf5077b6d72416f68d5d6747478be0d16c1739"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AgentResultsTests.swift",
+      "blob": "d2a8198f34e03fb6104738b3196ea1c8e18fe05b"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AgentReviewTests.swift",
+      "blob": "7dd9d52d631d4fe023d73ac9ec6178e5033bc579"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AgentRoutineConditionTests.swift",
+      "blob": "58ec958764967419d4daa15bc58ce155c9402bd9"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AgentRoutineTests.swift",
+      "blob": "6106e693d0a3b9be8a26f9e7b2b5392412168535"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AgentStoreTests.swift",
+      "blob": "7fd49ef12564464a999697ea833d15c8cd99c87a"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AgentTestSupport.swift",
+      "blob": "aebe6b59ba0d5397247acf4ad0cc84689fbb96f6"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AgentToolsTests.swift",
+      "blob": "74bb1a7c08a04938bee2e43eacd7aa1599e10ec9"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AgentsPlusTestSupport.swift",
+      "blob": "9aa73a30611e086079815850df364b287bbeb8f1"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AlwaysOnSessionSwapTests.swift",
+      "blob": "27c4479c702cce90af3f27e4aca318338d3bccf4"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AlwaysOnVoiceLoopTests.swift",
+      "blob": "3e29718d85c2f7778f71d713bc377bb5d3b8c320"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AnthropicMessagesTests.swift",
+      "blob": "79222e5635db6bea0d37a01b4d18afd41d08a6d5"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AppToolCalendarTests.swift",
+      "blob": "a76d239e8aa1b768f1ad9d5b6fa828c641224e3e"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AppToolLinkTests.swift",
+      "blob": "bf565baf8269af3b8a4b7371b714c5c803d67386"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AppToolMusicTests.swift",
+      "blob": "3866db56e424974b8e87e89285e65422ba109abc"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AppToolReviewTests.swift",
+      "blob": "7952c8dd95fc545041f26e9d028171826c6d16af"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AppToolboxTests.swift",
+      "blob": "4c0f533be754c0b153f59eca70581cd204061dc6"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AppleSpeechSynthesisTests.swift",
+      "blob": "acd39aa39529bf940532bce26a727fd650620b00"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AppleSpeechTests.swift",
+      "blob": "5cbfe372f93412d1e5b8a4b58d283d535d341f52"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AudioConverterTests.swift",
+      "blob": "d9149b58b747bbc5e2bb820eb409d0761eb4b6cd"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AudioCueTests.swift",
+      "blob": "87d15b271f0d968586d56cdb05375c5beac75fda"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AudioMicLogicTests.swift",
+      "blob": "dc69a508eff93ea15735769bacf8bd78e38fae62"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AudioOfflineEngineTests.swift",
+      "blob": "b6701b59ade767255f21591f9b603fc67775434d"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AudioReviewTests.swift",
+      "blob": "51c1127965da68c88d974d3588b6a56559a0cf25"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AudioSpeechPlayerTests.swift",
+      "blob": "8cb57d90ca005490a22f3fb4a9de235eb7f75247"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AudioTroubleTests.swift",
+      "blob": "2dfc3905c348c167ecf612ecdcfbe94e6a06d350"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/AudioWAVTests.swift",
+      "blob": "294e9c34e056a20b75e12695bd040e33f7e995ba"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/BinaryStreamCancellationTests.swift",
+      "blob": "a2adaae24b20f986537c8ea5e047c2142dceb0bd"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/BrainContextTests.swift",
+      "blob": "eefdc0c14781ce779fbccfa0b13cfcd098c5a7e4"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/BrainRelayReservationTests.swift",
+      "blob": "f8e079be8d87217dc464ec9ad1c8d8ee459fb202"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/BrainReviewTests.swift",
+      "blob": "b239d6a9482618830c2120c8100a8ebf0cd4b91b"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/BrainRuntimeTests.swift",
+      "blob": "e3980cfc1bc66bc070625f2fb24004bbb43c20b0"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/BrainSessionTests.swift",
+      "blob": "80494a289f40b27d4d8997929dce1ee6174ffdf8"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/BrainTestSupport.swift",
+      "blob": "a13471940f269b7232b29485738aefd9f47a7f63"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/BrowserApprovalTests.swift",
+      "blob": "97061b699fbf568c613531dc36add515fb634c76"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/BrowserFramingTests.swift",
+      "blob": "39496dba8510c3263c574ae7b9e83375df623459"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/BrowserHardeningTests.swift",
+      "blob": "e6a0c87b22500074ad1cb6222ada730187b25d0c"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/BrowserInstallerTests.swift",
+      "blob": "d23e6a3d84a74f67310525dd7e30128435c56372"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/BrowserMCPTests.swift",
+      "blob": "cbc5c41045de537fb8a98f14d53b2bcc640a31d1"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/BrowserOperationsTests.swift",
+      "blob": "9ad7b0ed44cacdc09b65b07b0b6300774c2b8e2b"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/BrowserRelayTests.swift",
+      "blob": "d40c8af07e87920571d38668b708256e4d199f3e"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/BrowserTestSupport.swift",
+      "blob": "f8ef8713d6ae57c1c1db55518485e2f983611dff"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/BrowserTurnsTests.swift",
+      "blob": "81882433923f770af993d48cb6c8d77cde7fecf6"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/BuddyGuidanceTests.swift",
+      "blob": "5b59ca1662ec2ee7c4e1e2f6ec1fcfacdc52c5a2"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/CaptionWordsTests.swift",
+      "blob": "c6e9b5bba20852592f150334b9d2eb0d50d6c8fc"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/ComposioAccountsTests.swift",
+      "blob": "1a5624cac5dbbea50cb2a283f8c63c84f650496b"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/ConfigValidatorTests.swift",
+      "blob": "9b1c5a799c5013d61904d18350f5dd8e7f460b14"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/ConnectedAppsSecretsTests.swift",
+      "blob": "135eff8ffd9236687a04e2e282663adee501731f"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/ConnectedAppsTests.swift",
+      "blob": "0e00540046b497524c3b31750998137c1ed8e133"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/ContextBrowserScriptingTests.swift",
+      "blob": "f24bbc9dd5fa632668163181541f8aeb53a5f808"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/ContextGathererTests.swift",
+      "blob": "41499912fd4e24c714170447d989a90c2279c0e4"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/ContextTextAndFileTests.swift",
+      "blob": "ff1e7e2a82a0a082e7e3624eec29e8690aa73b22"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/ContextTurnBridgeTests.swift",
+      "blob": "6cbf166ec69b933060ea78e3b520ffb10ddef12a"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/CoreHardeningReviewTests.swift",
+      "blob": "afe3f92fbec8a190e64ae6bd135b44a33e97268d"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/CoreHardeningTests.swift",
+      "blob": "e95ba8f5b8433c3823508a03eacc7eaf295ee7db"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/DeepgramListenTests.swift",
+      "blob": "981cd5c6c6ae70996e77d273c0e5b2eb8a9127d9"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/DictationAdapterCleanupTests.swift",
+      "blob": "bbf045175a92028e4e4cb9cdf9e2e83ed27d2b50"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/DictationArchiveTests.swift",
+      "blob": "12ffedf5103164e43336334435d54b7cafc6d7fc"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/DictationCleanupTests.swift",
+      "blob": "0db8cdd2046dc7cdf45bf6c6e2f43764dbb8d595"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/DictationControllerTests.swift",
+      "blob": "8791c2204001e866861ada30e3242f444b86fadc"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/DictationEngagementTests.swift",
+      "blob": "44ab01276c990eb3255be2798c17dd3d8dd68836"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/DictationFallbackTests.swift",
+      "blob": "ae8d199325c6c07f9390f9499a18f5d23bcc5aa0"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/DictationFocusContextTests.swift",
+      "blob": "0c4a0f6c8cf8b2f1be201671b79ba1973c14a24e"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/DictationFocusRecaptureTests.swift",
+      "blob": "2dba2ecab118d402de5aa4b4a71a7504d45a598d"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/DictationInsertionTests.swift",
+      "blob": "cd464247d07ece6853351dd006015cef56372b8a"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/DictationReviewTests.swift",
+      "blob": "88cf3848a93a99cd1f97454eda3cd2ab599270a4"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/DictationTestSupport.swift",
+      "blob": "738bf014da3b13eb52ab2a7ded9e20cdd59e5d58"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/DictationVocabularyTests.swift",
+      "blob": "f526e9a0dc53dc34a704788a1c18ec10faec6c44"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/DictationWarmEarsTests.swift",
+      "blob": "1d96f2b07628b21d80780c18190b0d8c6e185267"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/DrawingCompletenessTests.swift",
+      "blob": "43f7a09fe7717b74ae2230d28853db5fbe2e1813"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/DrawingEngineTests.swift",
+      "blob": "da72f1a56d5a74d5cb40feae4238f5ab7a5a1b51"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/DrawingInteractionTests.swift",
+      "blob": "549820cbd8bec0e6c954a57a3e29c4e4bd9cd6c8"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/DrawingLanguageTests.swift",
+      "blob": "87c9546f94d8651f804887d3c7ea60ca1b8daab7"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/DrawingLayoutTests.swift",
+      "blob": "8c8be946d96a8ba6347feb5964aa742116c7dc9d"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/DrawingMediaTests.swift",
+      "blob": "1816c60caa4b528f34a8f1a9365c58536acc0183"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/DrawingPacingTests.swift",
+      "blob": "60f4d065d791ec44091e605e1b18db40f534e391"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/DrawingPainterTests.swift",
+      "blob": "a85ce1978ca9f824fac53b7d91710b9d64d90405"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/DrawingSnapshotTests.swift",
+      "blob": "242ed24b778f979d8cc33ce01ac18b35026e94c0"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/EchoCancellationTests.swift",
+      "blob": "ccdd09b12947a37819acb4aafdb31c9f23cab357"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/ElementGroundingTests.swift",
+      "blob": "f2cd10c6e1faac776d3dc312844d4754dfcab5ac"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/ElevenLabsSpeechTests.swift",
+      "blob": "5897b6d9863e9ffa22ba342bade3b90c03a92606"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/EngineFactoryTests.swift",
+      "blob": "8d5dd01ab00ff192ea44f879165f4d6425ed2e23"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/FeatureFlagWiringTests.swift",
+      "blob": "41fba282dd69c7a0d0a33c5195f419ffa4a57297"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/FigureAvailabilityTests.swift",
+      "blob": "4767cbdec2fbf7a627ed15b7dd3643814bf12c85"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/FigureKernelTests.swift",
+      "blob": "9f54f69799c126fabd305657d82f279798bc7705"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/FigureLanguageTests.swift",
+      "blob": "f74f5083906648a404724c238cec8bdfcf08e3dd"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/FigureRenderTests.swift",
+      "blob": "ae2847da279f2d69917f4c47ba1f2b4a5cd28eda"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/FigureSceneTests.swift",
+      "blob": "d4167bb2c1f0eb04246a48f74e7e71f384f0b7a1"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/FigureStageTests.swift",
+      "blob": "6f6a138de368520da3bbd17622379c6b8272effe"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/FilePreviewTests.swift",
+      "blob": "897d5fc6927be335586dbdb653a57612608732b0"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/GeminiLiveSpeechToTextTests.swift",
+      "blob": "bf4bc4d6f05f9c73be615d78fe29b02b79a5ef37"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/GeminiSpeechTests.swift",
+      "blob": "2d959e00471f9aae64f9d2ef201d19ef3603a062"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/GuidedWalkthroughTests.swift",
+      "blob": "891cecc79b5aef310302ffee974ff02019dd89db"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/HigherModelOutcomeTests.swift",
+      "blob": "7803bf38f43b6cc63a840ec61a10474067276876"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/HighlightTests.swift",
+      "blob": "c51f58b4c7b7c2fc801869613b32b92c17620673"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/HomeHistoryTests.swift",
+      "blob": "a5e565091d53e62d6135a6b0830ac8a50361fb0b"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/HomeOnboardingInterviewTests.swift",
+      "blob": "e843860c8703f53a059409d9636f7f73a58df438"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/HomeOnboardingTests.swift",
+      "blob": "49261deb8bd69a949bce87d2862b39aaf280bbf0"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/HomeSkillsTests.swift",
+      "blob": "2136c09e64600c2117245c74a94ae781f6e0c116"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/HomeTalkKeyTests.swift",
+      "blob": "e32e89dad5fd1e1b25267727c0b25ff4e14a09ef"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/HomeVoiceAndChatTests.swift",
+      "blob": "ea14af866040ed92d2b7ed8a7046a10191148017"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/InfraDiagnosisTests.swift",
+      "blob": "1d42f45ef522783e097da95aa82e31e6bee17eda"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/InfraDiagnosticsTests.swift",
+      "blob": "bc281a8a16893b738b9145da839ed1dea2135074"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/InfraRetryTests.swift",
+      "blob": "72fdbb2008b5f14d904ba05198de7e7907ce9697"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/InfraUsageJobsTests.swift",
+      "blob": "ba2e515282a6dc2fe18f880e05f01db521d8ce20"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/InfraUsageTests.swift",
+      "blob": "3a150482ed7a87a5f240257aac09cd0a4594b49a"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/IntegrationRegressionTests.swift",
+      "blob": "553205ea51f0bb0f23707b844cc976b7a41c8547"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/IntegrationsTestSupport.swift",
+      "blob": "78c1c9246ab1374beb8d7b16dc47fbf320771260"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/KeychainRoundTripTests.swift",
+      "blob": "d14b20fc7058856fbde60f6032254262c32ca412"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/LatencyHUDTests.swift",
+      "blob": "8a515db36d1d0a99f9a15aacb26e44a4ac155c80"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/LatencyTests.swift",
+      "blob": "c8e837128b3cb00765ccd4476f4314f1766980f0"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/LookupAdapterTests.swift",
+      "blob": "45bc8cb07501c366185ed1a5d9c16cc1ef63cbfc"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/LookupHardeningTests.swift",
+      "blob": "3e8cc5f2bafb5ec4261c58345cec81a09a26a057"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/LookupServicesTests.swift",
+      "blob": "ca4a72bbf07fb584404b5e5289354c1fccdc4d78"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/MCPHTTPClientTests.swift",
+      "blob": "2fa196ea507420db88a580509aee9fb1a1d66794"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/MCPOAuthTests.swift",
+      "blob": "9699833fc65b80664e2900fec4cf45a4f0d90b74"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/MCPStdioTests.swift",
+      "blob": "a0458d21fe1e14607bc25bd1f055821e1afe2a63"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/MemoryFileFormatTests.swift",
+      "blob": "90917cef5173a1989ae81012c9fce43734919053"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/MemoryHardeningTests.swift",
+      "blob": "7bf369e096e6ff1fa2d278f7de075d4799d2c8be"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/MemoryRankingTests.swift",
+      "blob": "815dc92b462c11ac4faba4ebdb0aeade1395515a"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/MemorySecretTests.swift",
+      "blob": "892fbe2d69ce347f54676104ea5beedeb6f26521"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/MemoryTestSupport.swift",
+      "blob": "3380af25d0a6dfc36603b5b9168ebf66d52d33fa"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/MemoryToolsTests.swift",
+      "blob": "2cd7a9b5b9c362d6ada5da960d797e0048ed1680"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/MemoryWriterTests.swift",
+      "blob": "2321def8e88f78029a9608d55e10d9c1817c827a"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/MeteredSpeechRefusalTests.swift",
+      "blob": "fb1eb07a4994f0188f9a05f1126c2ab3d78bda60"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/MutedOutputTests.swift",
+      "blob": "5a406989e8972074c13ea56e7f05c4998a76c94b"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/NotchEventSourceTests.swift",
+      "blob": "6ff02c015e42a09e0b9f073b4c8e7aa116a65cf8"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/NotchPresenterTests.swift",
+      "blob": "bfdf1f58725e2682b35f950a64e96fd9f4901ce1"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/NotchServiceEventTests.swift",
+      "blob": "afb9901452d61f64356f6fc9b1287dcf72a871b0"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/NotchSimulatorTests.swift",
+      "blob": "b74b81ce0daabbfd8e2c87c4bdfd04ce0226ab6f"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/NotchSystemUITests.swift",
+      "blob": "7825a2076554ed7c3c42634e9aa27e906a78eb21"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/ObsidianVaultTests.swift",
+      "blob": "d089471f6df65ec910c149e02e4a8b52d49aab09"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/OpenAIChatTests.swift",
+      "blob": "b1af6088cc2e034060cc9fd5646b16f2145067ab"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/OpenAIRealtimeSpeechTests.swift",
+      "blob": "6838366a11de10e829700568a11ae8e338ee3431"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/OpenAIResponsesAdversarialTests.swift",
+      "blob": "cad39e8cc0e2093206e8fb0c45a633d0aa1dd12f"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/OpenAIResponsesTests.swift",
+      "blob": "89fc1928ce9478c8b349edec12bc076514270a7c"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/OpenAISpeechTests.swift",
+      "blob": "40e493efb8a45c0c1c0b35d25e26d57f168ae840"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/OpenAITranscriptionTests.swift",
+      "blob": "dadfbf1901b2d3153d869c1fa1c9b69c65e211dc"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/PermissionStateTests.swift",
+      "blob": "756aa0a4a6018fd38856c2863c5a3721cb87b0b1"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/PointingTests.swift",
+      "blob": "788272d3b823c235f9fc3f64dfadd9f1b3033681"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/ProviderItemsTests.swift",
+      "blob": "3446795640f2f7ffe1d9359d57060fe18a807be3"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/QuietContextTests.swift",
+      "blob": "09c7196507566def96a2c76bb8917f9094efb0d5"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/RealtimeConversationTests.swift",
+      "blob": "4697653b4b9b9f2b8a88ce479aaaef29ef18a000"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/RealtimeToolDispatcherTests.swift",
+      "blob": "ae5923491201082e894b24a0e30405cdd26cba10"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/RealtimeVoiceGeminiTests.swift",
+      "blob": "0c573a7b55286dae3932a0640a168409affb0e0c"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/RealtimeVoiceOpenAITests.swift",
+      "blob": "1a176620086e096c4a5e2b4592554d271f34b047"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/RealtimeVoiceReviewTests.swift",
+      "blob": "793d9f3964dd7e1c7ab6c399dddc4667ae3e7701"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/SayLineExtractorTests.swift",
+      "blob": "06743b894a587e053cf4d6d092e7fd902ac05cd9"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/ScreenCaptureSizingTests.swift",
+      "blob": "60b96fb5bbca18b69b012b6f1a42b97d0f7d160c"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/ScreenContextReviewTests.swift",
+      "blob": "7dcaad9be2ca35860779a1e7a3d325234a006d8f"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/ScreenCoordinateTests.swift",
+      "blob": "00148924438cbec5f202a695a9808b6e7845cd43"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/ScreenOwnWindowPolicyTests.swift",
+      "blob": "66276e4e06310f8cfc52d9a07867e28bf7ec9705"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/ScreenSettleTests.swift",
+      "blob": "2fe06c5cd89cdc9d44ac4a81ca19cb71a23712b4"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/SettingsAgentsBrowserTests.swift",
+      "blob": "56951b5a3cf7bb21352b67728b30025f58cc20fa"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/SettingsGeneralTests.swift",
+      "blob": "223db2725e7e91064609b3780963b12000940d32"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/SettingsMicDictationTests.swift",
+      "blob": "e3acd0c1e34309a160e54269549febb22b87a4b9"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/SettingsRouterTests.swift",
+      "blob": "f13bfa6dd07bb70976fd8b511a9924af4cd46d09"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/SkillsHarnessTests.swift",
+      "blob": "794dcaaa912d2f62ea853de6e05ddd8908121893"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/SkillsPlusTests.swift",
+      "blob": "1a91eeb193f49dc7819b500453a8caae507d67c0"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/StackScreenshotRegressionTests.swift",
+      "blob": "aa8ae88fe7e006bcf68cf4f7b4c15d8cb9c9edbf"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/TakeoverActuatorTests.swift",
+      "blob": "fba9c11f4c96397843145a428fbd51284ab49dd4"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/TakeoverConsentTests.swift",
+      "blob": "43b26215bd90e1b2bb8b7b0c6f94646ba0bf40a8"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/TakeoverDriverTests.swift",
+      "blob": "fa4ed190a1666b1d3b9ade36618feea24c46cc3a"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/TakeoverMappingTests.swift",
+      "blob": "5fad8843cc8836484574afbbf5d8e86efbfd65c6"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/TakeoverPlannerTests.swift",
+      "blob": "f7d64937d5f2142685ab2d7a7a0e7b54b8fb7bfc"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/TakeoverSafetyTests.swift",
+      "blob": "e7feaa8cdc3727eeef21b4d7c9192e7ea9c7b0e8"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/TakeoverTestSupport.swift",
+      "blob": "b9c625952ab46da501d407f8c525020793312048"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/TalkKeyGestureTests.swift",
+      "blob": "f5d6ba2d27d342c88958eeded40c8445b679b519"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/TalkKeyKindTests.swift",
+      "blob": "9d2d5ec6e1b29be5802612423a293f0b05967410"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/TimingTestSupport.swift",
+      "blob": "32362d778c86aeebf7c77d4e3044c3d42df65e51"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/TransportTests.swift",
+      "blob": "581669e009bf95864222e4c0734bc8fd82fdf764"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/URLSessionTransportTests.swift",
+      "blob": "81317f88e9e4f219c6be8b71c97c901a021525bf"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/VoiceEarsTests.swift",
+      "blob": "a378227ab80788a093fd57365ff31ad67af6e30b"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/VoiceFallbackOrderTests.swift",
+      "blob": "9d5311c4b2eca886bb38c4ce2a55c96e4fa0cbe3"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/VoiceLoopGuidanceTests.swift",
+      "blob": "002c665566c4f31a6be03e1cf124c1402b1d3447"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/VoiceLoopReviewTests.swift",
+      "blob": "8bfa532fe6f0e47fc6d1a19ae07850aa4bb7c939"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/VoiceLoopTestSupport.swift",
+      "blob": "4f44a18c60b63d38ac07eaf661b9c4a87aef6604"
+    },
+    {
+      "path": "Tests/OpenClickyKitTests/VoiceLoopTests.swift",
+      "blob": "cd4ffca6a661a532c7c4cca8b351d65d4e689d85"
+    },
+    {
+      "path": "Tests/OpenClickyTests/AgentNotifierTests.swift",
+      "blob": "8650afacd3249c6f7d230a94b22537cd52e6c7e0"
+    },
+    {
+      "path": "Tests/OpenClickyTests/AgentResultRetryTests.swift",
+      "blob": "a5a5d0bf510d8d274740903c4000e7f78abf9c31"
+    },
+    {
+      "path": "Tests/OpenClickyTests/AgentServicesNotesTests.swift",
+      "blob": "074787e0715d5848d6a97c6515075fc60ef2d4ff"
+    },
+    {
+      "path": "Tests/OpenClickyTests/CapturePolicyIntegrationTests.swift",
+      "blob": "8ec8e88bc5441fc6c31e513c081b0a18fd0890af"
+    },
+    {
+      "path": "Tests/OpenClickyTests/ComposioConnectRefreshTests.swift",
+      "blob": "8fdfe40ac0d0183a7a86814d4c8d858668af40c3"
+    },
+    {
+      "path": "Tests/OpenClickyTests/DeveloperBrainControlsTests.swift",
+      "blob": "9795dc7a8712df763734872e2fe15e8026d5982c"
+    },
+    {
+      "path": "Tests/OpenClickyTests/DictationSettingsVocabularyTests.swift",
+      "blob": "d4e14a129c86cbc7efa0a0cf99aa222e6187b59d"
+    },
+    {
+      "path": "Tests/OpenClickyTests/FilePreviewModelTests.swift",
+      "blob": "eafd8fdf6536502e91cd55ac89c43c7affa18c70"
+    },
+    {
+      "path": "Tests/OpenClickyTests/LatencyStatsPanelTests.swift",
+      "blob": "893187b3602de6aefbb1c7dfce3ee942e10cae88"
+    },
+    {
+      "path": "Tests/OpenClickyTests/LessonReplayModelTests.swift",
+      "blob": "d8e0305e045522f858380601630887db1990e6b0"
+    },
+    {
+      "path": "Tests/OpenClickyTests/ObservationLoopTests.swift",
+      "blob": "e6c9cc1ce2b693939088612b0d60421ca2c778ed"
+    },
+    {
+      "path": "Tests/OpenClickyTests/OneShotBrainIntegrationTests.swift",
+      "blob": "9489311fce439e7dbabd35075a79c831df7151b2"
+    },
+    {
+      "path": "Tests/OpenClickyTests/OverlayDisplayMappingTests.swift",
+      "blob": "49a1e17421e7b601dadd54f08264cf00d324ecf5"
+    },
+    {
+      "path": "Tests/OpenClickyTests/PermissionsCenterTests.swift",
+      "blob": "25f9f77a173d8a0e016bb6ce4ec681cbea62da03"
+    },
+    {
+      "path": "Tests/OpenClickyTests/QuietDeliveryTests.swift",
+      "blob": "9b339aa24ae7b49c8f66a8b2520f4773be2352f5"
+    },
+    {
+      "path": "Tests/OpenClickyTests/ResultCardLinkTests.swift",
+      "blob": "f5992bdd828bdb14362245447dfcac26aac28166"
+    },
+    {
+      "path": "Tests/OpenClickyTests/UsageLimitAmountTests.swift",
+      "blob": "6e589ce661c17d3e8b0c95733e2e3d033e409920"
+    },
+    {
+      "path": "Tests/UsageLedgerProbe/main.swift",
+      "blob": "13d7551bafbeb9b868cfee34d9352feb5d43128b"
+    },
+    {
+      "path": "docs/agent-harness.md",
+      "blob": "1d1546a04753050828035c059dc237fcebe7df63"
+    },
+    {
+      "path": "docs/app-tools.md",
+      "blob": "929672db816e06a2742d5c68de7b7c3085ecc872"
+    },
+    {
+      "path": "docs/audio-robustness.md",
+      "blob": "c95b2fe0c68207d63eb03b5dc6a947e837800431"
+    },
+    {
+      "path": "docs/brain.md",
+      "blob": "464d10c120bd83b4db66ab3895cd641d31118211"
+    },
+    {
+      "path": "docs/browser-bridge.md",
+      "blob": "1f21306889c09a0d9aaaa6b35eabbe0fccd1ae1b"
+    },
+    {
+      "path": "docs/connected-apps.md",
+      "blob": "3e0b5e8ec147d33db2690547c01ab8821a9298f3"
+    },
+    {
+      "path": "docs/drawing-contract.md",
+      "blob": "ed5e90776f99ef6d58b7b705bb57d65ac48dbd5e"
+    },
+    {
+      "path": "docs/dsl-3d.md",
+      "blob": "372c947c322d7d50d0e3aac0d143028a82d46ecf"
+    },
+    {
+      "path": "docs/dsl-guided.md",
+      "blob": "5b5f562d14df4420a817b7436740e0f4b88b1d52"
+    },
+    {
+      "path": "docs/dsl-media.md",
+      "blob": "f9bf387e700c1b5b675e0d09e0d3c75c7cb3c7f9"
+    },
+    {
+      "path": "docs/dsl.md",
+      "blob": "1adf73855c1dbb3c88cc83ae60bc803c6eded85a"
+    },
+    {
+      "path": "docs/examples/config-cheap-gemini-ears.json",
+      "blob": "044aeeef9f8949c12d283212359cd57d6ab88a65"
+    },
+    {
+      "path": "docs/examples/config-cheap.json",
+      "blob": "6baa5650f2269e80a5868cf38c061cce86f36b81"
+    },
+    {
+      "path": "docs/examples/config-gemini-voice.json",
+      "blob": "0209c94d60ec948ec666534bf4863a9f314ceac6"
+    },
+    {
+      "path": "docs/examples/config-realtime-gemini.json",
+      "blob": "ce1f830bd608309cda7eb1d82a2d5168888ad93c"
+    },
+    {
+      "path": "docs/examples/notch-script-services.json",
+      "blob": "b068eea62594ce0343be5315647beb14fd719c03"
+    },
+    {
+      "path": "docs/examples/notch-script.json",
+      "blob": "a319b64ebaddf0e9f260091570abe3a92dcc78df"
+    },
+    {
+      "path": "docs/examples/services-brave-images.json",
+      "blob": "2c1b6ec2beb0fb4d87fb93254fd690e600c73638"
+    },
+    {
+      "path": "docs/guided.md",
+      "blob": "a0ac3ab5a33c5eb61686329ea624363bd3991514"
+    },
+    {
+      "path": "docs/history.md",
+      "blob": "a8004f49fe5360630e06c7556427f26603a00bbc"
+    },
+    {
+      "path": "docs/home.md",
+      "blob": "9d0f66340496101a96af04e64b0b7e14301100f7"
+    },
+    {
+      "path": "docs/infra.md",
+      "blob": "0ef9f2cb6985a6cdfdb5971dc33b453081a476ab"
+    },
+    {
+      "path": "docs/integration-source-heads.json",
+      "blob": "f13e8b936a5e1c78c078fea2823587a9cd36df31"
+    },
+    {
+      "path": "docs/integration.md",
+      "blob": "45efd64340a5833c8ea551ecdf921d7e6690ea6d"
+    },
+    {
+      "path": "docs/latency.md",
+      "blob": "1b02e9db99653a2460b871b196b80449c16c0291"
+    },
+    {
+      "path": "docs/lookups.md",
+      "blob": "8ccb18ce7dcbbe05824ef4a53f015d96a64b11c5"
+    },
+    {
+      "path": "docs/memory.md",
+      "blob": "f69a1c6169ad9511e5b65de93e20dd322b1b1b2f"
+    },
+    {
+      "path": "docs/notch.md",
+      "blob": "1998b26ad98aa8da6335cd999231bb1ef56c1626"
+    },
+    {
+      "path": "docs/overlay-interaction.md",
+      "blob": "5465f21ec18864bb4cd1e78ab6de50ed6076d64e"
+    },
+    {
+      "path": "docs/parity-status.md",
+      "blob": "567e5981a06b56adc43127c6adbf97938386f8b3"
+    },
+    {
+      "path": "docs/parity.md",
+      "blob": "ba168ccdf3591f1163894e18d262238fa2c67a81"
+    },
+    {
+      "path": "docs/re/01-type-map.md",
+      "blob": "02081833e91b26f44e686902cc46699ca1df1c2a"
+    },
+    {
+      "path": "docs/re/02-voice-pipeline.md",
+      "blob": "9e2375a7483a834c67857370c051a3fb47a24c67"
+    },
+    {
+      "path": "docs/re/03-screen-pointing.md",
+      "blob": "e439a89d5bd49ee52a62d1500d53301b3178ac41"
+    },
+    {
+      "path": "docs/re/04-draw-2d.md",
+      "blob": "6a186251a7ba522c53bf49c25fd6e9e425462296"
+    },
+    {
+      "path": "docs/re/05-draw-3d.md",
+      "blob": "9888b6c29c38e68d72e15ab9be9ffb72dd01cbe8"
+    },
+    {
+      "path": "docs/re/06-agent-harness.md",
+      "blob": "d5bf90af22205d2718cfc1135e90060b5b5e386d"
+    },
+    {
+      "path": "docs/re/07-browser-bridge.md",
+      "blob": "cbb4fbaf3358cb0eab36b1c1ad831a3b40d0f351"
+    },
+    {
+      "path": "docs/re/08-apps-memory-ui.md",
+      "blob": "47c0f144a8722aa6e464e631b4456cdbfce23c16"
+    },
+    {
+      "path": "docs/re/09-server-api.md",
+      "blob": "e671b811c5c1c6de00b5ca4af5f12ba1c546e801"
+    },
+    {
+      "path": "docs/realtime-voice.md",
+      "blob": "4864fbf3998d737b7ec1002adf63d1d133e7e0c6"
+    },
+    {
+      "path": "docs/settings.md",
+      "blob": "8fdb0333b30efd9c9a1d466ebb2cd6f3f17bc24f"
+    },
+    {
+      "path": "docs/skills.md",
+      "blob": "f86a1980f6c35a6987fc2ea5b604d98fc38bfca8"
+    },
+    {
+      "path": "docs/takeover.md",
+      "blob": "4d08d28dbcdcd6336ebdd1427b1b65d188bcf806"
+    },
+    {
+      "path": "docs/testing.md",
+      "blob": "4e81a35689e7526dbcd528dede0bfcd7b3961e46"
+    },
+    {
+      "path": "docs/turn-contract.md",
+      "blob": "4861ea174dc905237005cbb5aef2f30bfb4fef39"
+    },
+    {
+      "path": "docs/voice-loop.md",
+      "blob": "80042a4b1361766c15d04943afc0dc418455e7cd"
+    },
+    {
+      "path": "scripts/OpenClicky.entitlements",
+      "blob": "bdea86b490097edfd677f71f3218aad9d9e75495"
+    },
+    {
+      "path": "scripts/build-app-icon.sh",
+      "blob": "b979c714a1128161ddf65ed2752a9a917673c18a"
+    },
+    {
+      "path": "scripts/build-app.sh",
+      "blob": "08110fa0a0ec7b94bf8fdc42180e83c7ba0b41be"
+    },
+    {
+      "path": "scripts/build-three-kernel.sh",
+      "blob": "49a8ae0ebdd1c91a39e7c61f70f06a71855b58e0"
+    },
+    {
+      "path": "scripts/check-agent-panel.swift",
+      "blob": "1945baf6aa3221970aa9d024f9a9d5fed0c2c7a2"
+    },
+    {
+      "path": "scripts/check-publication-files.py",
+      "blob": "a3a61b6262a28790671ca0db1980f391cc02201a"
+    },
+    {
+      "path": "scripts/check-stack-provenance.py",
+      "blob": "1480e2c0392eed9468086cd8d2f8df5c6f7c3e83"
+    },
+    {
+      "path": "scripts/dev-keys.sh",
+      "blob": "3b81fc0e959583fffd1575c732e969cb9b1c2526"
+    },
+    {
+      "path": "scripts/flaky-provider-proxy.py",
+      "blob": "a2e06f9726993d5e0858a83b72ba434e273fc410"
+    },
+    {
+      "path": "scripts/make-signing-identity.sh",
+      "blob": "a9a9d290786b52fbff03cdb25a1a5d5d9da5a0e6"
+    },
+    {
+      "path": "scripts/render-drawing-evidence.sh",
+      "blob": "f7fc49a409c5f26d0761f2ce944cfe3e8c0e98c6"
+    },
+    {
+      "path": "scripts/sync-prompts.sh",
+      "blob": "cfb9c3b36852f5e6b58c0e0da7138ff0e8ea8a29"
+    }
+  ],
+  "public_adjustments": {
+    ".github/workflows/ci.yml": "Public repository links, fresh-history documentation or import verification.",
+    "PRIVACY.md": "Public repository links, fresh-history documentation or import verification.",
+    "README.md": "Public repository links, fresh-history documentation or import verification.",
+    "Sources/OpenClickyKit/Infra/Diagnostics.swift": "Public repository links, fresh-history documentation or import verification.",
+    "Sources/OpenClickyKit/Lookups/LookupSupport.swift": "Public repository links, fresh-history documentation or import verification.",
+    "Tests/OpenClickyKitTests/InfraDiagnosticsTests.swift": "Public repository links, fresh-history documentation or import verification.",
+    "docs/integration.md": "Public repository links, fresh-history documentation or import verification.",
+    "docs/parity-status.md": "Public repository links, fresh-history documentation or import verification.",
+    "docs/testing.md": "Public repository links, fresh-history documentation or import verification.",
+    "scripts/check-stack-provenance.py": "Public repository links, fresh-history documentation or import verification.",
+    "THIRD_PARTY_NOTICES.md": "Use the exact font-license path casing for GitHub links."
+  },
+  "added_files": [
+    "AUTHORS.md",
+    "docs/public-source.json"
+  ]
+}

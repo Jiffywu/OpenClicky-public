@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>OpenClicky bridge test</title>
+    <style>
+      body { font: 16px -apple-system, system-ui, sans-serif; margin: 32px; background: #f6f4ef; color: #222; }
+      main { max-width: 560px; }
+      label { display: block; margin: 10px 0; }
+      #out { padding: 10px; background: #fff; border: 1px solid #ccc; border-radius: 6px; }
+      .spacer { height: 1600px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Bridge test page</h1>
+      <p>This page checks that OpenClicky can read and act in a browser tab.</p>
+      <form id="form">
+        <label>Your name <input id="name" name="name" placeholder="Type a name" /></label>
+        <label>Favorite color
+          <select id="color">
+            <option value="r">Red</option>
+            <option value="g">Green</option>
+            <option value="b">Blue</option>
+          </select>
+        </label>
+        <label>Password <input id="pw" type="password" /></label>
+        <button type="button" id="hello">Say hello</button>
+      </form>
+      <p id="out">Nobody has said hello yet.</p>
+      <p><a href="page2.html">Go to the second page</a></p>
+      <div class="spacer"></div>
+      <button type="button" id="far">A button far down the page</button>
+      <label>Card expiry month
+        <select id="expiry" autocomplete="cc-exp-month"><option>01</option><option>02</option></select>
+      </label>
+      <table id="plans">
+        <caption>Plans</caption>
+        <tr><th>Plan</th><th>Price</th></tr>
+        <tr><td>Basic</td><td>$5</td></tr>
+        <tr><td>Pro</td><td>$12</td></tr>
+      </table>
+      <div id="notes" contenteditable="true" role="textbox" aria-label="Notes"
+           style="min-height: 40px; background: #fff; border: 1px solid #ccc; margin: 10px 0"></div>
+      <button type="button" id="more">Show details</button>
+      <div id="details"></div>
+    </main>
+    <script>
+      document.getElementById("hello").addEventListener("click", () => {
+        // Answer after a short delay, so wait_for has something to wait for.
+        setTimeout(() => {
+          const name = document.getElementById("name").value || "stranger";
+          const color = document.getElementById("color").selectedOptions[0].text;
+          document.getElementById("out").textContent = `Hello, ${name}! You picked ${color}.`;
+        }, 400);
+      });
+      document.getElementById("more").addEventListener("click", () => {
+        document.getElementById("details").innerHTML = '<button type="button">Hide details</button>';
+      });
+      document.getElementById("far").addEventListener("click", () => {
+        document.getElementById("far").textContent = "Far button was clicked";
+      });
+    </script>
+  </body>
+</html>

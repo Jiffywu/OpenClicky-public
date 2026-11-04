@@ -1,0 +1,8 @@
+step(1)
+say("Select the name box and type Sam in place of Jeff.")
+callout(266, 135, "Type Sam here", {side: "right"})
+step(2)
+say("Then click Say hello.")
+callout(104, 227, "Click this", {side: "right"})
+step(3)
+say("The line under it will read Hello, Sam! You picked Green.")

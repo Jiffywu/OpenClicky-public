@@ -1,0 +1,6 @@
+step(1)
+say("Click the Favorite color dropdown, the one that says Green.")
+callout(163, 166, "Click here", {side: "below"})
+step(2)
+say("Pick the color you like from the list, and the message updates.")
+point(163, 166, "dropdown")

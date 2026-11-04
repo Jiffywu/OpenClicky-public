@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "services": {
+    "image-search": {"provider": "brave"},
+    "places": {"provider": "mapkit"}
+  },
+  "commonsFallback": true,
+  "detectPeople": true,
+  "favicons": "duckduckgo"
+}

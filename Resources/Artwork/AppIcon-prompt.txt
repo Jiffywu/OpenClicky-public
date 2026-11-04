@@ -1,0 +1,7 @@
+Use case: logo-brand
+Asset type: production macOS Dock and Finder application icon, square 1024 by 1024 PNG.
+Primary request: Create an original icon for OpenClicky, a screen-aware voice assistant that points, draws, and helps with computer work.
+Subject: one bold, friendly computer cursor arrow as a small companion, with two tiny expressive dark eyes integrated into its broad upper body. A compact click/ripple accent behind it suggests speaking and interaction. The arrow silhouette must remain unmistakable at 32 pixels.
+Style: crafted macOS app icon, simple sculpted enamel shapes with subtle depth and controlled soft highlights. Strong silhouette, very few large shapes, no busy texture. Warm, approachable, quietly playful. Use a restrained high-contrast palette suited to the app's dark interface, with a single warm accent that makes it easy to find in the Dock.
+Composition: a centered rounded-square app tile with consistent generous corner curvature, slightly inset within the canvas; cursor centered and large, all parts within the tile. Transparent pixels outside the rounded-square tile, no rectangular backdrop. Present only the icon straight-on, not a product mockup.
+Constraints: entirely original artwork, do not copy any existing assistant logo or HeyClicky artwork. No letters, words, watermark, UI screenshot, typography, extra characters, decorative stars, or broad outside drop shadow. Keep every visible element crisp and readable at small Dock sizes.

@@ -1,0 +1,6 @@
+step(1)
+say("Click the Your name box, then select Jeff and type Sam.")
+point(189, 135, "Your name")
+step(2)
+say("Then click Say hello, and the greeting will update.")
+point(67, 227, "Say hello")

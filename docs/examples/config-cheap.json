@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "providers": [
+    {
+      "id": "anthropic",
+      "dialect": "anthropic-messages",
+      "baseURL": "https://api.anthropic.com",
+      "credential": "anthropic"
+    },
+    {
+      "id": "openrouter",
+      "dialect": "openai-chat",
+      "baseURL": "https://openrouter.ai/api/v1",
+      "credential": "openrouter",
+      "headers": {
+        "X-Title": "OpenClicky"
+      }
+    },
+    {
+      "id": "deepseek",
+      "dialect": "openai-chat",
+      "baseURL": "https://api.deepseek.com",
+      "credential": "deepseek"
+    },
+    {
+      "id": "elevenlabs",
+      "dialect": "elevenlabs-speech",
+      "baseURL": "https://api.elevenlabs.io",
+      "credential": "elevenlabs"
+    },
+    {
+      "id": "apple-speech",
+      "dialect": "apple-speech"
+    },
+    {
+      "id": "apple-voices",
+      "dialect": "apple-speech-synthesis"
+    }
+  ],
+  "models": [
+    {
+      "id": "openai/gpt-5-nano",
+      "displayName": "GPT-5 nano (OpenRouter)",
+      "kind": "language-model",
+      "capabilities": [
+        "text-input",
+        "image-input",
+        "text-output",
+        "streaming",
+        "tool-calling",
+        "reasoning"
+      ],
+      "dialects": [
+        "openai-chat"
+      ],
+      "price": {
+        "inputPerMillion": 0.05,
+        "cachedInputPerMillion": 0.005,
+        "outputPerMillion": 0.4,
+        "source": "OpenRouter's public price list, 2026-10-31"
+      }
+    },
+    {
+      "id": "deepseek/deepseek-v4.1-flash",
+      "displayName": "DeepSeek V4.1 Flash (OpenRouter)",
+      "kind": "language-model",
+      "capabilities": [
+        "text-input",
+        "image-input",
+        "text-output",
+        "streaming",
+        "tool-calling",
+        "reasoning"
+      ],
+      "dialects": [
+        "openai-chat"
+      ],
+      "price": {
+        "inputPerMillion": 0.045,
+        "cachedInputPerMillion": 0.006,
+        "outputPerMillion": 0.5,
+        "source": "OpenRouter's public price list, 2026-10-31"
+      }
+    },
+    {
+      "id": "deepseek-flash",
+      "displayName": "DeepSeek Flash (direct)",
+      "kind": "language-model",
+      "capabilities": [
+        "text-input",
+        "text-output",
+        "streaming",
+        "tool-calling"
+      ],
+      "dialects": [
+        "openai-chat"
+      ]
+    }
+  ],
+  "slots": {
+    "stt": {
+      "provider": "apple-speech",
+      "model": "on-device"
+    },
+    "voice": {
+      "provider": "elevenlabs",
+      "model": "eleven_flash_v2_5",
+      "voice": "EXAVITQu4vr4xnSDxMaL"
+    },
+    "brain": {
+      "provider": "anthropic",
+      "model": "claude-haiku-5-5"
+    },
+    "brain-fast": {
+      "provider": "openrouter",
+      "model": "openai/gpt-5-nano"
+    },
+    "agent": {
+      "provider": "anthropic",
+      "model": "claude-haiku-5-5",
+      "harness": "claude-code"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+name: CI
+
+# swift build, swift test and the browser extension's node tests on a GitHub-hosted macOS runner.
+#
+# Full macOS builds remain opt-in. Start one by hand (Actions → CI → Run workflow), or add the
+# `run-ci` label to a pull request; while the label stays on, each new push to that pull request runs it again.
+# Remove the label to stop.
+
+on:
+  workflow_dispatch:
+    inputs:
+      runner:
+        description: "macOS runner image (the code needs Swift 6 and a macOS 26 or newer SDK)"
+        required: false
+        default: macos-26
+  pull_request:
+    types: [labeled, synchronize]
+
+concurrency:
+  group: ci-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.action == 'labeled' && github.event.label.name == 'run-ci') ||
+      (github.event.action == 'synchronize' && contains(github.event.pull_request.labels.*.name, 'run-ci'))
+    runs-on: ${{ inputs.runner || 'macos-26' }}
+    timeout-minutes: 45
+    env:
+      # Tests never touch the network or the Keychain; keep the ledger and any stray writes in the workspace.
+      OPENCLICKY_USAGE_DIR: ${{ github.workspace }}/.ci-usage
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Keep private artifacts out of Git
+        run: python3 scripts/check-publication-files.py
+
+      - name: Use the newest Xcode on the runner
+        run: |
+          latest=$(ls -d /Applications/Xcode*.app | sort -V | tail -1)
+          echo "Using $latest"
+          sudo xcode-select -s "$latest"
+          swift --version
+          xcrun --show-sdk-version
+
+      - name: Cache the SwiftPM build
+        uses: actions/cache@v4
+        with:
+          path: .build
+          key: spm-${{ runner.os }}-${{ inputs.runner || 'macos-26' }}-${{ hashFiles('Package.swift', 'Package.resolved') }}-${{ github.sha }}
+          restore-keys: |
+            spm-${{ runner.os }}-${{ inputs.runner || 'macos-26' }}-${{ hashFiles('Package.swift', 'Package.resolved') }}-
+
+      - name: Build
+        run: swift build --build-tests
+
+      - name: Test
+        run: swift test --skip-build
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Extension tests
+        run: node --test Extension/chrome/tests/policy.test.mjs Extension/chrome/tests/background.test.mjs

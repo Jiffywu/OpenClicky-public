@@ -1,0 +1,75 @@
+{
+  "base": "8d30537265c759ee597d8732535ba4938171bfc8",
+  "sources": [
+    {
+      "number": 46,
+      "title": "Clickable drawings and figures, follow-ups that continue the drawing, stale watch",
+      "url": "https://github.com/Jiffywu/OpenClicky/pull/46",
+      "head": "0649291953fcf6388b4dc28ec7bbd3e493a04026",
+      "branch": "feat/drawing-interaction"
+    },
+    {
+      "number": 47,
+      "title": "Drawing polish: layout, language breadth, look and captions",
+      "url": "https://github.com/Jiffywu/OpenClicky/pull/47",
+      "head": "1749de123aca9c709460a893992ca1abb9c7daec",
+      "branch": "feat/drawing-polish"
+    },
+    {
+      "number": 48,
+      "title": "Agents plus: result cards, connected apps in jobs, limits and compaction",
+      "url": "https://github.com/Jiffywu/OpenClicky/pull/48",
+      "head": "bfb873778586fe211518ef2c0a224c557ce30633",
+      "branch": "feat/agents-plus"
+    },
+    {
+      "number": 49,
+      "title": "Settings pages: General, Microphone, Dictation, Agents, Routines, Browser and openclicky:// links",
+      "url": "https://github.com/Jiffywu/OpenClicky/pull/49",
+      "head": "ca40d48c30ea7a0409f8452e09cebc6770a7568b",
+      "branch": "feat/settings-pages"
+    },
+    {
+      "number": 50,
+      "title": "One brain everywhere: Home chat on the runtime, skills, connected apps, job notes and memory in every turn, always-on with the same context",
+      "url": "https://github.com/Jiffywu/OpenClicky/pull/50",
+      "head": "2b98bc099e5e438fc77d875efbca66a17bec3f06",
+      "branch": "feat/brain-context"
+    },
+    {
+      "number": 51,
+      "title": "Voice turn latency: hidden thinking, warm ears with fallbacks, capture at key-up",
+      "url": "https://github.com/Jiffywu/OpenClicky/pull/51",
+      "head": "ef7d281710123f886c185922b7e9ca9eff73a5ee",
+      "branch": "feat/latency"
+    },
+    {
+      "number": 52,
+      "title": "Sound trouble and quiet times: mic trouble, muted output, echo cancellation, calls and Focus",
+      "url": "https://github.com/Jiffywu/OpenClicky/pull/52",
+      "head": "b3b0fcc3ffb06b11e78c8062023b6aefd3090a15",
+      "branch": "feat/audio-robustness"
+    },
+    {
+      "number": 53,
+      "title": "Infra: provider retries and plain errors, usage ledger, diagnostics, flags, CI",
+      "url": "https://github.com/Jiffywu/OpenClicky/pull/53",
+      "head": "0f9e9f958dfcb02fabdf29467408fbfdf13ca9cc",
+      "branch": "feat/infra"
+    },
+    {
+      "number": 54,
+      "title": "Skills plus: bundled agent skills, integration skills, and a skills library you can edit",
+      "url": "https://github.com/Jiffywu/OpenClicky/pull/54",
+      "head": "e04c324e2cc5bce78c79da4df815a8045bb88a65",
+      "branch": "feat/skills-plus"
+    },
+    {
+      "number": 57,
+      "title": "Show menu toggle states and let Background Jobs close",
+      "url": "https://github.com/Jiffywu/OpenClicky/pull/57",
+      "head": "a7528dc352db4c53b521534a5ef60522c1f81c9e",
+      "branch": "fix/menu-panel-state"
+    }
+  ]
+}

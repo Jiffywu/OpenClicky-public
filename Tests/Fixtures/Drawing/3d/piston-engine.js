@@ -1,0 +1,36 @@
+// One cylinder of a four-stroke engine, cut open to show the piston, rod and crank.
+say("Here's one cylinder of a car engine, cut open.");
+const f = figure(640, 120, 600, 520, { look: "studio", tilt: 14, turn: -20 });
+const block = f.tube({ r: 0.82, inner: 0.56, h: 2.3, at: [0, 0.95, 0], mat: "aluminum", cut: true, round: 0.02 });
+const head = f.box({ size: [1.9, 0.42, 1.9], at: [0, 2.31, 0], round: 0.05, mat: "iron", cut: true });
+f.box({ size: [1.9, 0.12, 1.9], at: [0, -0.26, 0], round: 0.03, mat: "aluminum", cut: true });
+const valve = f.cylinder({ from: [0.26, 2.02, 0], to: [0.26, 2.95, 0], r: 0.04, mat: "steel" });
+f.cylinder({ from: [-0.26, 2.02, 0], to: [-0.26, 2.95, 0], r: 0.04, mat: "steel" });
+f.cone({ r: 0.18, h: 0.1, at: [0.26, 2.08, 0], mat: "steel", rot: [180, 0, 0], mirror: "x" });
+f.spring({ r: 0.11, h: 0.4, turns: 6, wire: 0.018, at: [0.26, 2.72, 0], mirror: "x", mat: "copper" });
+const plug = f.cylinder({ from: [0, 2.1, 0], to: [0, 3.0, 0], r: 0.07, mat: "ceramic" });
+f.cylinder({ r: 0.1, h: 0.14, at: [0, 2.62, 0], seg: 6, mat: "steel" });
+const piston = f.cylinder({ r: 0.55, h: 0.62, round: 0.03, mat: "aluminum", at: [0, 1.2, 0], cut: true });
+f.torus({ r: 0.55, tube: 0.018, at: [0, 0.18, 0], parent: piston, mat: "steel", cut: true, copies: { count: 2, step: [0, 0.09, 0] } });
+const rod = f.capsule({ r: 0.08, h: 1.45, mat: "steel", at: [0, 0.2, 0] });
+const crank = f.group({ at: [0, -1.05, 0] });
+f.cylinder({ r: 0.62, h: 0.16, axis: "z", at: [0, 0, 0.12], round: 0.03, parent: crank, mat: "iron", mirror: "z" });
+f.cylinder({ r: 0.09, h: 0.52, axis: "z", at: [0, 0.38, 0], parent: crank, mat: "chrome" });
+f.cylinder({ r: 0.12, h: 1.4, axis: "z", parent: crank, mat: "steel" });
+f.label(piston, "piston");
+f.label(rod, "connecting rod", { side: "left" });
+f.label(crank, "crankshaft");
+f.label(valve, "valves");
+f.label(plug, "spark plug", { side: "left" });
+say("As the crank turns, the rod pushes the piston up and down.");
+f.tick((t) => {
+  const a = t * 2.4;
+  const pin = [0.38 * Math.sin(a), -1.05 + 0.38 * Math.cos(a), 0];
+  const wristY = pin[1] + Math.sqrt(1.75 * 1.75 - pin[0] * pin[0]);
+  crank.rot = [0, 0, -a * 57.2958];
+  piston.at = [0, wristY + 0.08, 0];
+  rod.at = [pin[0] / 2, (pin[1] + wristY) / 2, 0];
+  rod.rot = [0, 0, Math.atan2(pin[0], wristY - pin[1]) * 57.2958];
+  const stroke = ["intake", "compression", "power", "exhaust"][Math.floor(a / Math.PI) % 4];
+  f.readout({ crank: Math.round(a * 57.2958 % 720) + "°", stroke });
+});
